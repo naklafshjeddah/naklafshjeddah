@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "sectors": "Sectors",
+    "areas": "Areas & Districts",
+    "routes": "Intercity Moving",
+    "storage": "Storage",
+    "offers": "Offers",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "cta": {
+    "call": "Call Now",
+    "whatsapp": "WhatsApp",
+    "getQuote": "Get a Quote",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More"
+  },
+  "common": {
+    "phone": "Phone",
+    "address": "Address",
+    "hours": "Business Hours",
+    "allRightsReserved": "All rights reserved",
+    "24/7": "Available 24/7"
+  }
+}
+
+
+
+
+
+
+
