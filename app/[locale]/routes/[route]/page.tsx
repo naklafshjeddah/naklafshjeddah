@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
@@ -9,9 +10,13 @@ import { routes, site } from "@/config/site";
 import { Truck, Clock, MapPin, CheckCircle2 } from "lucide-react";
 
 export async function generateStaticParams() {
-  return routes.map((route) => ({
-    route: route.slug,
-  }));
+  const locales = ["ar", "en"];
+  return routes.flatMap((route) =>
+    locales.map((locale) => ({
+      locale,
+      route: route.slug,
+    }))
+  );
 }
 
 export async function generateMetadata({
@@ -46,6 +51,7 @@ export default function RoutePage({
 }: {
   params: { locale: string; route: string };
 }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
   const routeData = routes.find((r) => r.slug === route);
 

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -9,9 +10,13 @@ import { blogPosts } from "@/config/blog";
 import { Calendar, Tag, User } from "lucide-react";
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
+  const locales = ["ar", "en"];
+  return blogPosts.flatMap((post) =>
+    locales.map((locale) => ({
+      locale,
+      slug: post.slug,
+    }))
+  );
 }
 
 export async function generateMetadata({
@@ -49,6 +54,7 @@ export default function BlogPostPage({
 }: {
   params: { locale: string; slug: string };
 }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
   const post = blogPosts.find((p) => p.slug === slug);
 

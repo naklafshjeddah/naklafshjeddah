@@ -1,9 +1,14 @@
 import { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts } from "@/config/blog";
 import { Calendar, Tag } from "lucide-react";
+
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
 
 export async function generateMetadata({
   params: { locale },
@@ -30,6 +35,7 @@ export async function generateMetadata({
 }
 
 export default function BlogPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
 
   const breadcrumbs = [

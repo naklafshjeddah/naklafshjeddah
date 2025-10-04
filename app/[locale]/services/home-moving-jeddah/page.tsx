@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import ProcessSteps from "@/components/ProcessSteps";
 import FAQ from "@/components/FAQ";
@@ -7,6 +8,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SchemaInjector from "@/components/SchemaInjector";
 import { Shield, Star, Clock, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
 
 export async function generateMetadata({
   params: { locale },
@@ -33,6 +38,7 @@ export async function generateMetadata({
 }
 
 export default function HomeMovingPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
 
   const breadcrumbs = [

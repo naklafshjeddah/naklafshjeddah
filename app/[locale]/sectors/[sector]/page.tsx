@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import CTASection from "@/components/CTASection";
@@ -16,9 +17,13 @@ const sectors = [
 ];
 
 export async function generateStaticParams() {
-  return sectors.map((sector) => ({
-    sector: sector.slug,
-  }));
+  const locales = ["ar", "en"];
+  return sectors.flatMap((sector) =>
+    locales.map((locale) => ({
+      locale,
+      sector: sector.slug,
+    }))
+  );
 }
 
 export async function generateMetadata({
@@ -53,6 +58,7 @@ export default function SectorPage({
 }: {
   params: { locale: string; sector: string };
 }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
   const sectorData = sectors.find((s) => s.slug === sector);
 

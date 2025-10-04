@@ -1,9 +1,14 @@
 import { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { routes } from "@/config/site";
 import { Truck, MapPin, Clock } from "lucide-react";
+
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
 
 export async function generateMetadata({
   params: { locale },
@@ -30,6 +35,7 @@ export async function generateMetadata({
 }
 
 export default function RoutesPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
 
   const breadcrumbs = [

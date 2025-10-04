@@ -1,7 +1,12 @@
 import { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { Tag, Clock, Gift, Percent } from "lucide-react";
+
+export function generateStaticParams() {
+  return [{ locale: "ar" }, { locale: "en" }];
+}
 
 export async function generateMetadata({
   params: { locale },
@@ -28,6 +33,7 @@ export async function generateMetadata({
 }
 
 export default function OffersPage({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale);
   const isArabic = locale === "ar";
 
   const breadcrumbs = [
