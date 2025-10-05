@@ -9,10 +9,13 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "optimize-images": "node scripts/optimize-images.js",
-    "geo:images": "bash scripts/exif/tag_images.sh",
-    "geo:videos": "bash scripts/exif/tag_videos.sh",
-    "geo:verify": "bash scripts/exif/verify_meta.sh",
-    "geo:all": "npm run geo:images && npm run geo:videos && npm run geo:verify"
+    "geo:images": "powershell -ExecutionPolicy Bypass -File scripts/exif/tag_images.ps1",
+    "geo:videos": "powershell -ExecutionPolicy Bypass -File scripts/exif/tag_videos.ps1",
+    "geo:verify": "powershell -ExecutionPolicy Bypass -File scripts/exif/verify_meta.ps1",
+    "geo:all": "npm run geo:images && npm run geo:videos && npm run geo:verify",
+    "geo:images:bash": "bash scripts/exif/tag_images.sh",
+    "geo:videos:bash": "bash scripts/exif/tag_videos.sh",
+    "geo:verify:bash": "bash scripts/exif/verify_meta.sh"
   },
   "dependencies": {
     "next": "^14.2.0",
