@@ -1,4 +1,4 @@
-# GEO Metadata Tagging for Images (PowerShell)
+﻿# GEO Metadata Tagging for Images (PowerShell)
 # Adds XMP + GPS coordinates to all images in public/images/
 # Usage: powershell -ExecutionPolicy Bypass -File scripts/exif/tag_images.ps1
 
@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 # Check for exiftool
 $exiftool = Get-Command exiftool -ErrorAction SilentlyContinue
 if (-not $exiftool) {
-    Write-Host "❌ exiftool is required. Install:" -ForegroundColor Red
+    Write-Host "exiftool is required. Install:" -ForegroundColor Red
     Write-Host "   Option 1: choco install exiftool" -ForegroundColor Yellow
     Write-Host "   Option 2: Download from https://exiftool.org/" -ForegroundColor Yellow
     Write-Host "   See EXIFTOOL_INSTALL.md for details" -ForegroundColor Yellow
@@ -51,8 +51,8 @@ $neighborhoods = @{
     "obhur" = @("أبحر", "Obhur")
 }
 
-Write-Host "🗺️  Starting GEO metadata tagging for images..." -ForegroundColor Cyan
-Write-Host "📍 Base location: Jeddah ($LAT, $LON)" -ForegroundColor Cyan
+Write-Host "Starting GEO metadata tagging for images..." -ForegroundColor Cyan
+Write-Host "Base location: Jeddah ($LAT, $LON)" -ForegroundColor Cyan
 Write-Host ""
 
 $count = 0
@@ -98,43 +98,41 @@ foreach ($file in $imageFiles) {
         $enKw += ", Villa Moving"
     }
     
-    # Generate jittered coordinates (±0.0012°)
+    # Generate jittered coordinates
     $jlat = $LAT + ((Get-Random -Minimum 0.0 -Maximum 1.0) - 0.5) * 0.0024
     $jlon = $LON + ((Get-Random -Minimum 0.0 -Maximum 1.0) - 0.5) * 0.0024
     $jlat = [math]::Round($jlat, 6)
     $jlon = [math]::Round($jlon, 6)
     
     # Write metadata
-    & exiftool -overwrite_original -P -n `
+    $null = & exiftool -overwrite_original -P -n `
         "-XMP-photoshop:City=Jeddah" `
         "-XMP-photoshop:State=Makkah Province" `
-        "-XMP-iptcCore:CountryName=Saudi Arabia" `
-        "-XMP:CountryCode=SA" `
+        "-XMP-photoshop:Country=Saudi Arabia" `
         "-IPTC:City=جدة" `
         "-IPTC:Province-State=منطقة مكة المكرمة" `
         "-IPTC:Country-PrimaryLocationName=المملكة العربية السعودية" `
-        "-XMP-dc:Subject=$arKw" `
-        "-XMP-dc:Subject=$enKw" `
-        "-XMP:GPSLatitude=$jlat" `
-        "-XMP:GPSLongitude=$jlon" `
-        "-XMP:GPSAltitude=12" `
+        "-Keywords=$arKw" `
+        "-Keywords=$enKw" `
+        "-GPSLatitude=$jlat" `
+        "-GPSLongitude=$jlon" `
+        "-GPSAltitude=12" `
         "-XMP-photoshop:Credit=naklafshjeddah.com" `
         "-XMP-dc:Rights=© 2025 شركة الأفضل لنقل العفش - Naklafshjeddah.com" `
-        $file.FullName 2>$null
+        $file.FullName 2>&1
     
     $count++
     if ($locationHint) {
-        Write-Host "✅ $($file.Name) → $jlat,$jlon [$locationHint]" -ForegroundColor Green
+        Write-Host "$($file.Name) -> $jlat,$jlon [$locationHint]" -ForegroundColor Green
     } else {
-        Write-Host "✅ $($file.Name) → $jlat,$jlon" -ForegroundColor Green
+        Write-Host "$($file.Name) -> $jlat,$jlon" -ForegroundColor Green
     }
 }
 
 Write-Host ""
-Write-Host "🎉 Completed! Tagged $count images with GEO metadata" -ForegroundColor Green
-Write-Host "📍 All images now have:" -ForegroundColor Cyan
+Write-Host "Completed! Tagged $count images with GEO metadata" -ForegroundColor Green
+Write-Host "All images now have:" -ForegroundColor Cyan
 Write-Host "   - GPS coordinates (Jeddah + jitter)" -ForegroundColor White
 Write-Host "   - City/Country metadata" -ForegroundColor White
 Write-Host "   - Arabic + English keywords" -ForegroundColor White
 Write-Host "   - Neighborhood tags (where detected)" -ForegroundColor White
-
