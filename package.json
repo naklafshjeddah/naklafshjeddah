@@ -8,7 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "geo:images": "bash scripts/exif/tag_images.sh",
+    "geo:videos": "bash scripts/exif/tag_videos.sh",
+    "geo:verify": "bash scripts/exif/verify_meta.sh",
+    "geo:all": "npm run geo:images && npm run geo:videos && npm run geo:verify"
   },
   "dependencies": {
     "next": "^14.2.0",

@@ -8,6 +8,7 @@ import CTASection from "@/components/CTASection";
 import SchemaInjector from "@/components/SchemaInjector";
 import { site } from "@/config/site";
 import { Star, Shield, Clock, Users } from "lucide-react";
+import { localBusinessLD, imageLD, renderJSONLD } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return [{ locale: "ar" }, { locale: "en" }];
@@ -218,6 +219,27 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
     <>
       <SchemaInjector schema={localBusinessSchema} />
       <SchemaInjector schema={faqSchema} />
+      
+      {/* Enhanced Local Business JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={renderJSONLD(localBusinessLD())}
+      />
+      
+      {/* Hero Image with GEO Location */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={renderJSONLD(
+          imageLD({
+            url: "https://www.naklafshjeddah.com/images/home movers Jeddah.jpg",
+            caption: isArabic
+              ? "خدمات نقل عفش احترافية في جدة - شركة الأفضل"
+              : "Professional Furniture Moving Services in Jeddah - Al Afdal",
+            width: 1200,
+            height: 800,
+          })
+        )}
+      />
 
       <Hero
         title={
