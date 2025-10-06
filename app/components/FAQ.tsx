@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
@@ -13,14 +14,16 @@ interface FAQProps {
   items: FAQItem[];
 }
 
-export default function FAQ({ title = "الأسئلة الشائعة", items }: FAQProps) {
+export default function FAQ({ title, items }: FAQProps) {
+  const t = useTranslations("common");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const displayTitle = title || t("faqTitle");
 
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          {title}
+          {displayTitle}
         </h2>
 
         <div className="max-w-3xl mx-auto space-y-4">

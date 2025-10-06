@@ -25,9 +25,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-xl font-bold mb-4">{site.brand}</h3>
             <p className="text-sm leading-relaxed mb-4">
-              {isArabic
-                ? "شركة متخصصة في نقل العفش والأثاث بجدة مع فريق محترف وخبرة طويلة. نقدم خدمات شاملة من التغليف حتى التركيب مع ضمان السلامة."
-                : "Professional furniture moving company in Jeddah with expert team and extensive experience. We provide comprehensive services from packing to installation with safety guarantee."}
+              {t("common.companyDescription")}
             </p>
             <a
               href={site.whatsapp}
@@ -42,7 +40,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-white font-semibold mb-4">
-              {isArabic ? "روابط سريعة" : "Quick Links"}
+              {t("common.quickLinks")}
             </h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -58,7 +56,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-white font-semibold mb-4">
-              {isArabic ? "معلومات الاتصال" : "Contact Information"}
+              {t("common.contactInfo")}
             </h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
@@ -73,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>{isArabic ? "متاح 24/7 طوال الأسبوع" : "Available 24/7 All Week"}</span>
+                <span>{t("common.available24/7")}</span>
               </li>
             </ul>
           </div>
@@ -81,7 +79,7 @@ export default function Footer() {
           {/* Map */}
           <div>
             <h4 className="text-white font-semibold mb-4">
-              {isArabic ? "موقعنا" : "Our Location"}
+              {t("common.ourLocation")}
             </h4>
             <div className="bg-gray-800 rounded-lg overflow-hidden h-40">
               <iframe

@@ -1,4 +1,7 @@
+"use client";
+
 import { Phone, MessageCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { site } from "@/config/site";
 
 interface CTASectionProps {
@@ -11,9 +14,12 @@ interface CTASectionProps {
 export default function CTASection({
   title,
   description,
-  primaryText = "اتصل الآن",
-  secondaryText = "واتساب",
+  primaryText,
+  secondaryText,
 }: CTASectionProps) {
+  const t = useTranslations("cta");
+  const callText = primaryText || t("call");
+  const whatsappText = secondaryText || t("whatsapp");
   return (
     <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
       <div className="container mx-auto px-4 text-center">
@@ -26,7 +32,7 @@ export default function CTASection({
             className="inline-flex items-center gap-2 bg-white text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
           >
             <Phone className="w-5 h-5" />
-            {primaryText}
+            {callText}
           </a>
 
           <a
@@ -36,7 +42,7 @@ export default function CTASection({
             className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-all hover:scale-105 shadow-lg"
           >
             <MessageCircle className="w-5 h-5" />
-            {secondaryText}
+            {whatsappText}
           </a>
         </div>
       </div>

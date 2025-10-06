@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface ServiceCardProps {
@@ -17,6 +20,7 @@ export default function ServiceCard({
   href,
   isRTL = true,
 }: ServiceCardProps) {
+  const t = useTranslations("cta");
   const Arrow = isRTL ? ArrowLeft : ArrowRight;
 
   return (
@@ -42,7 +46,7 @@ export default function ServiceCard({
         <p className="text-gray-600 leading-relaxed mb-4 line-clamp-3">{description}</p>
 
         <div className="flex items-center gap-2 text-primary-600 font-semibold">
-          <span>{isRTL ? "اعرف المزيد" : "Learn More"}</span>
+          <span>{t("learnMore")}</span>
           <Arrow className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>

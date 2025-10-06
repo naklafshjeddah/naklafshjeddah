@@ -1,4 +1,7 @@
+"use client";
+
 import { CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Step {
   title: string;
@@ -11,14 +14,16 @@ interface ProcessStepsProps {
 }
 
 export default function ProcessSteps({
-  title = "خطوات العمل",
+  title,
   steps,
 }: ProcessStepsProps) {
+  const t = useTranslations("common");
+  const displayTitle = title || t("processSteps");
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          {title}
+          {displayTitle}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

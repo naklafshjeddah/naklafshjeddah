@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { site } from "@/config/site";
 
 interface HeroProps {
@@ -16,9 +19,12 @@ export default function Hero({
   subtitle,
   imageUrl,
   imageAlt,
-  ctaPrimary = "اتصل الآن",
-  ctaSecondary = "واتساب",
+  ctaPrimary,
+  ctaSecondary,
 }: HeroProps) {
+  const t = useTranslations("cta");
+  const callText = ctaPrimary || t("call");
+  const whatsappText = ctaSecondary || t("whatsapp");
   return (
     <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden">
       <div className="absolute inset-0 bg-black/30"></div>
@@ -35,7 +41,7 @@ export default function Hero({
                 className="inline-flex items-center gap-2 bg-white text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
               >
                 <Phone className="w-5 h-5" />
-                {ctaPrimary}
+                {callText}
               </a>
 
               <a
@@ -44,7 +50,7 @@ export default function Hero({
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-700 transition-all hover:scale-105 shadow-lg"
               >
-                {ctaSecondary}
+                {whatsappText}
               </a>
             </div>
           </div>

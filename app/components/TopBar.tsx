@@ -1,12 +1,11 @@
 "use client";
 
 import { Phone } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { site } from "@/config/site";
 
 export default function TopBar() {
-  const locale = useLocale();
-  const isArabic = locale === "ar";
+  const t = useTranslations("cta");
 
   return (
     <div className="bg-primary-700 text-white py-2 sticky top-0 z-50 shadow-md">
@@ -26,7 +25,7 @@ export default function TopBar() {
             rel="noopener noreferrer"
             className="bg-green-600 hover:bg-green-700 px-4 py-1.5 rounded-full font-semibold transition-all hover:scale-105"
           >
-            {isArabic ? "تواصل واتساب" : "WhatsApp"}
+            {t("whatsappContact")}
           </a>
         </div>
       </div>
