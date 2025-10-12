@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Hero from "@/components/Hero";
 import CTASection from "@/components/CTASection";
 import { Tag, Clock, Gift, Percent } from "lucide-react";
 
@@ -88,18 +89,26 @@ export default function OffersPage({ params: { locale } }: { params: { locale: s
     <>
       <Breadcrumbs items={breadcrumbs} isRTL={isArabic} />
 
-      <section className="py-16 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {isArabic ? "🎉 عروض وخصومات حصرية" : "🎉 Exclusive Offers and Discounts"}
-          </h1>
-          <p className="text-xl text-primary-50 max-w-3xl mx-auto leading-relaxed">
-            {isArabic
-              ? "استفد من عروضنا الخاصة واحصل على أفضل خدمة نقل بأسعار لا تُقاوم"
-              : "Take advantage of our special offers and get the best moving service at unbeatable prices"}
-          </p>
-        </div>
-      </section>
+      <Hero
+        title={
+          isArabic
+            ? "🎉 عروض وخصومات حصرية على نقل العفش"
+            : "🎉 Exclusive Offers and Discounts on Furniture Moving"
+        }
+        subtitle={
+          isArabic
+            ? "استفد من عروضنا الخاصة واحصل على أفضل خدمة نقل عفش احترافية بأسعار لا تُقاوم. خصومات وعروض محدودة"
+            : "Take advantage of our special offers and get the best professional furniture moving service at unbeatable prices. Limited discounts and deals"
+        }
+        imageUrls={[
+          "/images/affordable movers Jeddah.jpg",
+          "/images/best movers in Jeddah.jpg",
+          "/images/reliable movers Jeddah.jpg",
+        ]}
+        imageAlt={isArabic ? "عروض نقل العفش" : "Moving Offers"}
+        ctaPrimary={isArabic ? "اتصل الآن" : "Call Now"}
+        ctaSecondary={isArabic ? "واتساب" : "WhatsApp"}
+      />
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -140,43 +149,120 @@ export default function OffersPage({ params: { locale } }: { params: { locale: s
             {isArabic ? (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  شروط وأحكام العروض
+                  عروض حصرية على خدمات نقل العفش في جدة
                 </h2>
 
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    <li>لا يمكن الجمع بين أكثر من عرض في نفس الوقت</li>
-                    <li>العروض صالحة فقط داخل مدينة جدة</li>
-                    <li>يجب ذكر كود الخصم عند الحجز الأولي</li>
-                    <li>العروض لا تشمل خدمات التخزين المنفصلة</li>
-                    <li>الشركة تحتفظ بحق إلغاء أو تعديل العروض في أي وقت</li>
-                    <li>بعض العروض قد تكون لفترة محدودة</li>
-                  </ul>
-                </div>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  في{" "}
+                  <a href="/" className="text-primary-600 hover:underline font-semibold">
+                    شركة الأفضل لنقل العفش
+                  </a>
+                  ، نؤمن بتقديم أفضل قيمة لعملائنا. لذلك نقدم عروض وخصومات حصرية على{" "}
+                  <a href={`/${isArabic ? "" : "en/"}services`} className="text-primary-600 hover:underline">
+                    خدمات نقل العفش
+                  </a>{" "}
+                  الاحترافية في جدة. هذه العروض مصممة لتوفير المال عليك دون التنازل عن
+                  الجودة أو الاحترافية التي نشتهر بها.
+                </p>
 
-                <h3 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
                   كيفية الاستفادة من العروض؟
                 </h3>
 
-                <ol className="list-decimal list-inside space-y-3 text-gray-700">
+                <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
                   <li>
-                    <strong>اتصل بنا</strong> على 0560586397 أو واتساب وأخبرنا بالعرض الذي
-                    تريده
+                    <strong>اتصل بنا:</strong> على{" "}
+                    <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                      0560586397
+                    </a>{" "}
+                    أو{" "}
+                    <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                      واتساب
+                    </a>{" "}
+                    وأخبرنا بالعرض الذي تريده
                   </li>
                   <li>
-                    <strong>اذكر كود الخصم</strong> عند طلب عرض السعر
+                    <strong>اذكر كود الخصم:</strong> عند طلب عرض السعر لتطبيق الخصم
+                    مباشرة
                   </li>
                   <li>
-                    <strong>احجز موعدك</strong> مع تأكيد الخصم المطبق
+                    <strong>احجز موعدك:</strong> نؤكد الخصم المطبق ونحدد موعد مناسب
                   </li>
                   <li>
-                    <strong>استمتع بالخدمة</strong> بسعر مخفض وجودة عالية
+                    <strong>استمتع بالخدمة:</strong> احصل على خدمة احترافية بسعر مخفض
+                    وجودة ممتازة
                   </li>
                 </ol>
 
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  لماذا نقدم هذه العروض؟
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  نقل العفش قد يبدو مكلفاً للكثيرين. نحن ندرك ذلك ونريد أن نجعل خدماتنا
+                  الاحترافية متاحة للجميع. عروضنا ليست مجرد خصومات، بل هي التزام منا بخدمة
+                  المجتمع وبناء علاقات طويلة الأمد مع عملائنا. نريدك أن تجرب خدماتنا وتثق
+                  فينا، ونعلم أن تجربتك الأولى ستجعلك عميلاً دائماً.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  شروط وأحكام العروض
+                </h3>
+
+                <div className="bg-gray-50 p-6 rounded-lg not-prose mb-6">
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <li>لا يمكن الجمع بين أكثر من عرض في نفس الوقت</li>
+                    <li>العروض صالحة فقط داخل مدينة جدة للنقل المحلي</li>
+                    <li>يجب ذكر كود الخصم عند الحجز الأولي قبل إصدار عرض السعر</li>
+                    <li>العروض لا تشمل خدمات التخزين المنفصلة</li>
+                    <li>الشركة تحتفظ بحق إلغاء أو تعديل العروض في أي وقت</li>
+                    <li>بعض العروض قد تكون لفترة محدودة - اتصل لمعرفة صلاحية العرض</li>
+                    <li>الخصومات تطبق على الخدمات الأساسية، قد لا تشمل خدمات إضافية محددة</li>
+                    <li>العروض غير قابلة للتحويل أو الاستبدال نقداً</li>
+                  </ul>
+                </div>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  نصائح لتوفير المزيد
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  بالإضافة لعروضنا، إليك بعض النصائح لتوفير المزيد عند{" "}
+                  <a href={`/${isArabic ? "" : "en/"}services/home-moving-jeddah`} className="text-primary-600 hover:underline">
+                    نقل منزلك
+                  </a>
+                  :
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>احجز مبكراً:</strong> الحجز المسبق يتيح لنا تنظيم أفضل وقد
+                    يوفر لك المال
+                  </li>
+                  <li>
+                    <strong>نظم أغراضك:</strong> تخلص من الأثاث غير المستخدم لتقليل
+                    الحجم والتكلفة
+                  </li>
+                  <li>
+                    <strong>اختر أيام منتصف الأسبوع:</strong> عادة أقل ازدحاماً وأحياناً
+                    أرخص
+                  </li>
+                  <li>
+                    <strong>قم ببعض التغليف بنفسك:</strong> إذا كنت قادراً، غلف
+                    الأشياء الصغيرة بنفسك
+                  </li>
+                  <li>
+                    <strong>اسأل عن باقات شاملة:</strong> أحياناً الباقات الشاملة أوفر
+                    من الخدمات المنفصلة
+                  </li>
+                </ul>
+
                 <p className="text-gray-700 leading-relaxed mt-8 text-center font-semibold">
-                  لمزيد من المعلومات أو استفسار عن العروض المتاحة، لا تتردد في التواصل معنا على
-                  مدار الساعة.
+                  لا تفوت فرصة الاستفادة من عروضنا الحصرية! اتصل بنا الآن على{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline">
+                    0560586397
+                  </a>{" "}
+                  للحصول على عرض سعر مخصص مع الخصم. العروض محدودة!
                 </p>
               </>
             ) : (

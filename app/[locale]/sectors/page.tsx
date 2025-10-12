@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Hero from "@/components/Hero";
 import CTASection from "@/components/CTASection";
 import { Building2, Briefcase, Hotel, Warehouse, GraduationCap, Heart } from "lucide-react";
 
@@ -103,18 +104,27 @@ export default function SectorsPage({ params: { locale } }: { params: { locale: 
     <>
       <Breadcrumbs items={breadcrumbs} isRTL={isArabic} />
 
-      <section className="py-16 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {isArabic ? "القطاعات التي نخدمها" : "Sectors We Serve"}
-          </h1>
-          <p className="text-xl text-primary-50 max-w-3xl mx-auto leading-relaxed">
-            {isArabic
-              ? "خبرة متخصصة في نقل جميع أنواع القطاعات بحلول مخصصة لكل قطاع"
-              : "Specialized expertise in moving all types of sectors with customized solutions for each"}
-          </p>
-        </div>
-      </section>
+      <Hero
+        title={
+          isArabic
+            ? "القطاعات التي نخدمها - حلول نقل متخصصة"
+            : "Sectors We Serve - Specialized Moving Solutions"
+        }
+        subtitle={
+          isArabic
+            ? "خبرة متخصصة في نقل جميع القطاعات: السكني، التجاري، الضيافة، التعليم، والصحي. حلول مخصصة لكل قطاع"
+            : "Specialized expertise in moving all sectors: Residential, Commercial, Hospitality, Education, and Healthcare. Customized solutions for each sector"
+        }
+        imageUrls={[
+          "/images/office movers Jeddah.jpg",
+          "/images/home movers Jeddah.jpg",
+          "/images/villa movers Jeddah.jpg",
+          "/images/professional movers Jeddah.jpg",
+        ]}
+        imageAlt={isArabic ? "خدمات القطاعات" : "Sector Services"}
+        ctaPrimary={isArabic ? "اتصل الآن" : "Call Now"}
+        ctaSecondary={isArabic ? "واتساب" : "WhatsApp"}
+      />
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -153,27 +163,126 @@ export default function SectorsPage({ params: { locale } }: { params: { locale: 
             {isArabic ? (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  لماذا نحن الأفضل في خدمة جميع القطاعات؟
+                  خدمات نقل متخصصة لجميع القطاعات في جدة
                 </h2>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  في <strong>شركة الأفضل</strong>، ندرك أن كل قطاع له احتياجاته الخاصة وتحدياته
-                  الفريدة. لذلك نقدم حلول نقل مخصصة لكل قطاع مع فريق متخصص يفهم طبيعة عملك.
+                  في{" "}
+                  <a href="/" className="text-primary-600 hover:underline font-semibold">
+                    شركة الأفضل
+                  </a>
+                  ، ندرك تماماً أن كل قطاع له احتياجاته الخاصة، تحدياته الفريدة، ومتطلباته
+                  المختلفة. نقل مكتب يختلف عن نقل منزل، ونقل مستشفى يتطلب خبرة مختلفة عن نقل
+                  فندق. لذلك طورنا حلول نقل متخصصة لكل قطاع، مع فرق مدربة تفهم طبيعة كل مجال
+                  وكيفية التعامل مع احتياجاته الخاصة.
                 </p>
 
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">مميزاتنا لجميع القطاعات</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  لماذا التخصص مهم في خدمات النقل؟
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  النقل ليس مجرد نقل أغراض من مكان لآخر. كل قطاع له معداته الخاصة، أثاثه
+                  المميز، وتحدياته الفريدة. على سبيل المثال:
+                </p>
 
                 <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-                  <li>فرق متخصصة لكل قطاع مع خبرة عميقة</li>
-                  <li>معدات مخصصة حسب نوع المعدات والأثاث</li>
-                  <li>تخطيط مسبق مع مدراء المشاريع</li>
-                  <li>جدولة مرنة تناسب طبيعة عملك</li>
-                  <li>تأمين شامل على جميع الممتلكات</li>
-                  <li>خدمة 24/7 للحالات الطارئة</li>
+                  <li>
+                    القطاع السكني يحتاج لمسة شخصية وعناية بالذكريات والممتلكات العائلية
+                  </li>
+                  <li>
+                    القطاع التجاري يتطلب سرعة وتنسيق لتقليل تعطيل العمل
+                  </li>
+                  <li>
+                    الفنادق تحتاج نقل الأثاث الفاخر والقطع الثمينة مع سرية تامة
+                  </li>
+                  <li>
+                    القطاع الصحي يتطلب التعامل مع أجهزة طبية حساسة ومعقمات
+                  </li>
+                  <li>
+                    القطاع التعليمي يحتاج نقل مكتبات ضخمة ومعامل متخصصة
+                  </li>
                 </ul>
 
-                <p className="text-gray-700 leading-relaxed">
-                  اختر قطاعك من القائمة أعلاه لمعرفة المزيد عن خدماتنا المخصصة لك.
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  مميزاتنا لجميع القطاعات
+                </h3>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>فرق متخصصة:</strong> لكل قطاع فريق مدرب خصيصاً يفهم متطلباته
+                    ويعرف كيف يتعامل مع معداته
+                  </li>
+                  <li>
+                    <strong>معدات مخصصة:</strong> نمتلك معدات مختلفة حسب نوع القطاع - من
+                    رافعات ثقيلة للمصانع إلى عربات ناعمة للفنادق
+                  </li>
+                  <li>
+                    <strong>تخطيط مسبق محكم:</strong> نعمل معك لوضع خطة مفصلة تناسب جدولك
+                    وتقلل التعطيل
+                  </li>
+                  <li>
+                    <strong>جدولة مرنة:</strong> نقل ليلي، عطلات نهاية الأسبوع، أو أوقات
+                    محددة حسب احتياجك
+                  </li>
+                  <li>
+                    <strong>تأمين شامل:</strong> تغطية كاملة مصممة خصيصاً لنوع القطاع
+                    وقيمة المعدات
+                  </li>
+                  <li>
+                    <strong>خدمة 24/7:</strong> فريق متاح على مدار الساعة للطوارئ والدعم
+                  </li>
+                  <li>
+                    <strong>سرية تامة:</strong> نحترم خصوصية عملك ولا نفشي أي معلومات
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  تجربتنا عبر القطاعات
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  على مدار أكثر من عشر سنوات، خدمنا مئات العملاء من مختلف القطاعات في جدة
+                  والمملكة. نقلنا فنادق 5 نجوم، مستشفيات كبرى، شركات متعددة الجنسيات، مدارس
+                  دولية، وآلاف المنازل والفلل. هذه التجربة المتنوعة أعطتنا فهماً عميقاً لكل
+                  قطاع وكيفية تقديم أفضل خدمة له.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  كيف نضمن نجاح نقل قطاعك؟
+                </h3>
+
+                <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>استشارة أولية:</strong> نزورك لفهم احتياجاتك وتحدياتك
+                    الخاصة
+                  </li>
+                  <li>
+                    <strong>تقييم متخصص:</strong> فريق خبراء يقيم المعدات والأثاث حسب
+                    طبيعة القطاع
+                  </li>
+                  <li>
+                    <strong>خطة مخصصة:</strong> نضع خطة تفصيلية تناسب قطاعك وجدولك
+                  </li>
+                  <li>
+                    <strong>تنسيق محكم:</strong> تواصل مستمر معك في كل مرحلة
+                  </li>
+                  <li>
+                    <strong>تنفيذ احترافي:</strong> فريق متخصص ينفذ الخطة بدقة
+                  </li>
+                  <li>
+                    <strong>متابعة بعد النقل:</strong> نتأكد من استقرار كل شيء ورضاك
+                    التام
+                  </li>
+                </ol>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  اختر قطاعك من القائمة أعلاه لمعرفة المزيد عن خدماتنا المخصصة، أو{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    اتصل بنا
+                  </a>{" "}
+                  الآن للحصول على استشارة مجانية وعرض سعر مخصص لقطاعك. نحن هنا لخدمتك
+                  بكل احترافية وخبرة.
                 </p>
               </>
             ) : (

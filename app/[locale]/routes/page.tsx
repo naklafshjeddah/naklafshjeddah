@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Hero from "@/components/Hero";
 import CTASection from "@/components/CTASection";
 import { routes } from "@/config/site";
 import { Truck, MapPin, Clock } from "lucide-react";
@@ -47,19 +48,27 @@ export default function RoutesPage({ params: { locale } }: { params: { locale: s
     <>
       <Breadcrumbs items={breadcrumbs} isRTL={isArabic} />
 
-      <section className="py-16 bg-gradient-to-br from-primary-700 to-primary-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <Truck className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {isArabic ? "نقل عفش بين المدن من جدة" : "Intercity Furniture Moving from Jeddah"}
-          </h1>
-          <p className="text-xl text-primary-50 max-w-3xl mx-auto leading-relaxed">
-            {isArabic
-              ? "نقل آمن وموثوق من جدة إلى جميع مدن المملكة. شاحنات مجهزة، سائقون محترفون، وضمان على جميع ممتلكاتك"
-              : "Safe and reliable moving from Jeddah to all Saudi cities. Equipped trucks, professional drivers, and guarantee on all your belongings"}
-          </p>
-        </div>
-      </section>
+      <Hero
+        title={
+          isArabic
+            ? "نقل عفش بين المدن من جدة لجميع مدن المملكة"
+            : "Intercity Furniture Moving from Jeddah to All Saudi Cities"
+        }
+        subtitle={
+          isArabic
+            ? "نقل آمن وموثوق من جدة إلى الرياض، مكة، المدينة، الطائف وجميع مدن المملكة. شاحنات مجهزة وسائقون محترفون"
+            : "Safe and reliable moving from Jeddah to Riyadh, Makkah, Madinah, Taif and all Saudi cities. Equipped trucks and professional drivers"
+        }
+        imageUrls={[
+          "/images/moving trucks Jeddah.jpg",
+          "/images/truck rental Jeddah.jpg",
+          "/images/Saudi Arabia movers.jpg",
+          "/images/long distance movers.jpg",
+        ]}
+        imageAlt={isArabic ? "نقل عفش بين المدن" : "Intercity Moving"}
+        ctaPrimary={isArabic ? "اتصل الآن" : "Call Now"}
+        ctaSecondary={isArabic ? "واتساب" : "WhatsApp"}
+      />
 
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -112,8 +121,20 @@ export default function RoutesPage({ params: { locale } }: { params: { locale: s
             {isArabic ? (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  لماذا تختار شركة الأفضل للنقل بين المدن؟
+                  خدمات نقل عفش احترافية بين المدن من جدة
                 </h2>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  النقل بين المدن يحتاج خبرة خاصة ومعدات متطورة. في{" "}
+                  <a href="/" className="text-primary-600 hover:underline font-semibold">
+                    شركة الأفضل
+                  </a>
+                  ، لدينا خبرة واسعة في نقل العفش من جدة إلى جميع مدن المملكة. سواء كنت
+                  تنتقل إلى الرياض، مكة، المدينة، الطائف، أو أي مدينة أخرى، نحن نضمن لك نقلاً
+                  آمناً وسريعاً وموثوقاً. نستخدم شاحنات مجهزة خصيصاً للمسافات الطويلة، سائقين
+                  محترفين يعرفون الطرق جيداً، ونخطط كل رحلة بدقة لضمان وصول ممتلكاتك سليمة
+                  وفي الموعد المحدد.
+                </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 not-prose">
                   <div className="bg-primary-50 p-6 rounded-lg">
@@ -141,36 +162,65 @@ export default function RoutesPage({ params: { locale } }: { params: { locale: s
                   </div>
                 </div>
 
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  لماذا النقل بين المدن يحتاج خبرة خاصة؟
+                </h3>
+
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  النقل بين المدن يحتاج خبرة خاصة — طرق طويلة، ظروف مناخية متغيرة، وتحديات
-                  لوجستية. في <strong>شركة الأفضل</strong>، لدينا خبرة واسعة في نقل العفش بين جميع
-                  مدن المملكة. نستخدم شاحنات كبيرة مجهزة، سائقين محترفين، ونخطط كل رحلة بدقة لضمان
-                  وصول ممتلكاتك سليمة وفي الموعد.
+                  النقل المحلي داخل{" "}
+                  <a href={`/${isArabic ? "" : "en/"}jeddah`} className="text-primary-600 hover:underline">
+                    جدة
+                  </a>{" "}
+                  يختلف كثيراً عن النقل بين المدن. طرق طويلة تمتد لمئات الكيلومترات، ظروف
+                  مناخية متغيرة، تحديات لوجستية، واحتمالية التأخيرات - كل هذا يتطلب تخطيطاً
+                  دقيقاً وخبرة عميقة. لا يكفي أن تضع الأثاث في شاحنة وتنطلق. النقل الناجح
+                  بين المدن يحتاج:
                 </p>
 
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>شاحنات مخصصة للمسافات الطويلة مع أنظمة تعليق محسّنة</li>
+                  <li>تغليف إضافي ومقاوم للاهتزازات الطويلة</li>
+                  <li>تثبيت محكم جداً لمنع الحركة أثناء الرحلة</li>
+                  <li>سائقون خبراء في الطرق السريعة والظروف المختلفة</li>
+                  <li>صيانة دورية للشاحنات لتجنب الأعطال</li>
+                  <li>تنسيق دقيق للمواعيد مع فارق التوقيت</li>
+                </ul>
+
                 <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  ما الذي يميز خدمة النقل بين المدن؟
+                  ما الذي يميز خدمتنا للنقل بين المدن؟
                 </h3>
 
                 <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
                   <li>
-                    <strong>شاحنات مخصصة للمسافات الطويلة:</strong> مجهزة بأنظمة تعليق محسّنة وتثبيت
-                    قوي
+                    <strong>شاحنات متخصصة:</strong> أسطول من الشاحنات المغلقة الكبيرة
+                    المجهزة خصيصاً للمسافات الطويلة
                   </li>
                   <li>
-                    <strong>تغليف إضافي:</strong> طبقات حماية إضافية للطرق الطويلة
+                    <strong>تغليف مضاعف:</strong> نستخدم{" "}
+                    <a href={`/${isArabic ? "" : "en/"}services/packing-unpacking`} className="text-primary-600 hover:underline">
+                      طبقات حماية إضافية
+                    </a>{" "}
+                    للطرق الطويلة
                   </li>
                   <li>
-                    <strong>تأمين شامل:</strong> تغطية كاملة طوال الرحلة
+                    <strong>تأمين شامل:</strong> تغطية تأمينية كاملة طوال الرحلة من نقطة
+                    الاستلام حتى التسليم
                   </li>
                   <li>
-                    <strong>متابعة GPS:</strong> تتبع الشاحنة طوال الطريق
+                    <strong>متابعة GPS:</strong> تتبع حي للشاحنة طوال الطريق لمعرفة
+                    موقعها في أي وقت
                   </li>
                   <li>
-                    <strong>فريق استقبال:</strong> في المدينة المستهدفة لإتمام التسليم
+                    <strong>فريق استقبال:</strong> في المدينة المستهدفة لإتمام عملية
+                    التسليم وفك التغليف
                   </li>
                   <li>
-                    <strong>مرونة في المواعيد:</strong> نحدد موعد الاستلام والتسليم حسب احتياجك
+                    <strong>مرونة في الجدولة:</strong> نحدد موعد الاستلام والتسليم حسب
+                    احتياجك وظروفك
+                  </li>
+                  <li>
+                    <strong>تواصل مستمر:</strong> نبقيك على اطلاع بكل تحديث أثناء
+                    الرحلة
                   </li>
                 </ul>
 
@@ -179,18 +229,112 @@ export default function RoutesPage({ params: { locale } }: { params: { locale: s
                 </h3>
 
                 <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
-                  <li>تغليف احترافي مضاعف بمواد عالية الجودة</li>
-                  <li>تثبيت محكم داخل الشاحنة بأحزمة وحواجز</li>
-                  <li>توزيع الوزن بشكل متوازن</li>
-                  <li>سائقون خبراء في القيادة على الطرق السريعة</li>
-                  <li>صيانة دورية للشاحنات</li>
-                  <li>استراحات منتظمة لفحص الحمولة</li>
+                  <li>
+                    <strong>معاينة وتقييم:</strong> نعاين العفش ونحدد طريقة التغليف
+                    والشاحنة المناسبة
+                  </li>
+                  <li>
+                    <strong>تغليف احترافي مضاعف:</strong> بمواد عالية الجودة ومقاومة
+                    للصدمات
+                  </li>
+                  <li>
+                    <strong>تثبيت محكم:</strong> داخل الشاحنة بأحزمة قوية وحواجز واقية
+                  </li>
+                  <li>
+                    <strong>توزيع الوزن:</strong> بشكل متوازن لضمان ثبات الشاحنة على
+                    الطريق
+                  </li>
+                  <li>
+                    <strong>سائقون خبراء:</strong> مدربون على القيادة الآمنة على الطرق
+                    السريعة
+                  </li>
+                  <li>
+                    <strong>فحوصات دورية:</strong> نتوقف بانتظام لفحص الحمولة والتثبيت
+                  </li>
+                  <li>
+                    <strong>تسليم آمن:</strong> فريق متخصص يستقبل ويفرغ بعناية في
+                    الوجهة
+                  </li>
                 </ol>
 
-                <p className="text-gray-700 leading-relaxed">
-                  <strong>التسعير:</strong> يعتمد على المسافة، الكمية، ونوع الأثاث. المسافات
-                  الطويلة (مثل جدة-الرياض) تكلف أكثر من القصيرة (جدة-مكة). نوفر عروض أسعار شفافة
-                  ومفصلة. اضغط على المدينة التي تريد النقل إليها للحصول على معلومات وعرض سعر مخصص.
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  وجهاتنا الرئيسية من جدة
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  نقدم خدمات نقل منتظمة من جدة إلى:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>جدة - الرياض:</strong> المسار الأكثر طلباً، حوالي 950 كم، نقل
+                    سريع وآمن للعاصمة
+                  </li>
+                  <li>
+                    <strong>جدة - مكة المكرمة:</strong> مسافة قصيرة 80 كم، خدمة يومية
+                    متاحة
+                  </li>
+                  <li>
+                    <strong>جدة - المدينة المنورة:</strong> 420 كم، نقل احترافي للمدينة
+                    المنورة
+                  </li>
+                  <li>
+                    <strong>جدة - الطائف:</strong> 170 كم، طريق جبلي يحتاج خبرة خاصة
+                  </li>
+                  <li>
+                    <strong>جدة - الدمام:</strong> 1340 كم، نقل للمنطقة الشرقية مع تخطيط
+                    دقيق
+                  </li>
+                  <li>
+                    <strong>وجهات أخرى:</strong> أبها، جازان، تبوك، حائل، وجميع مدن
+                    المملكة
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  التسعير والتكلفة
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  تكلفة النقل بين المدن تعتمد على عدة عوامل:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>المسافة:</strong> المسافات الطويلة (جدة-الرياض) تكلف أكثر من
+                    القصيرة (جدة-مكة)
+                  </li>
+                  <li>
+                    <strong>حجم العفش:</strong> كمية الأثاث تحدد حجم الشاحنة المطلوبة
+                  </li>
+                  <li>
+                    <strong>نوع الأثاث:</strong> القطع الثقيلة أو الحساسة قد تحتاج معاملة
+                    خاصة
+                  </li>
+                  <li>
+                    <strong>خدمات إضافية:</strong> التغليف، الفك والتركيب، التخزين المؤقت
+                  </li>
+                  <li>
+                    <strong>الموسم:</strong> بعض الفترات (نهاية الشهر، الإجازات) قد تكون
+                    أكثر ازدحاماً
+                  </li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  نوفر عروض أسعار شفافة ومفصلة بدون رسوم مخفية. للحصول على عرض سعر دقيق
+                  لوجهتك، اضغط على المدينة من القائمة أعلاه أو{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    اتصل بنا
+                  </a>{" "}
+                  مباشرة.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed mt-8 text-center font-semibold">
+                  هل تخطط للانتقال إلى مدينة أخرى؟ دعنا نساعدك! اتصل الآن على{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline">
+                    0560586397
+                  </a>{" "}
+                  للحصول على استشارة مجانية وعرض سعر مخصص لوجهتك.
                 </p>
               </>
             ) : (
