@@ -288,13 +288,123 @@ export default function SectorsPage({ params: { locale } }: { params: { locale: 
             ) : (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  Why We're the Best in Serving All Sectors?
+                  Specialized Moving Services for All Sectors in Jeddah
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
-                  At Al Afdal, we understand that each sector has its own needs and unique
-                  challenges. That's why we provide customized moving solutions for each sector with
-                  specialized team that understands your business nature.
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  At{" "}
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Company
+                  </a>
+                  , we fully understand that each sector has its own needs, unique challenges,
+                  and different requirements. Moving an office is different from moving a home,
+                  and moving a hospital requires different expertise than moving a hotel.
+                  That's why we've developed specialized moving solutions for each sector, with
+                  trained teams that understand the nature of each field.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Specialization Matters in Moving Services?
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Moving isn't just transferring items from one place to another. Each sector
+                  has its own equipment, distinctive furniture, and unique challenges:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>Residential sector needs personal touch and care for family belongings</li>
+                  <li>Commercial sector requires speed and coordination to minimize work disruption</li>
+                  <li>Hotels need moving luxury furniture with complete confidentiality</li>
+                  <li>Healthcare sector requires handling sensitive medical equipment</li>
+                  <li>Education sector needs moving large libraries and specialized labs</li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Advantages for All Sectors
+                </h3>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Specialized Teams:</strong> Each sector has a specifically trained
+                    team that understands its requirements
+                  </li>
+                  <li>
+                    <strong>Customized Equipment:</strong> We own different equipment based on
+                    sector type - from heavy lifts for factories to soft carts for hotels
+                  </li>
+                  <li>
+                    <strong>Precise Pre-Planning:</strong> We work with you to create a
+                    detailed plan that suits your schedule
+                  </li>
+                  <li>
+                    <strong>Flexible Scheduling:</strong> Night moving, weekends, or specific
+                    times as needed
+                  </li>
+                  <li>
+                    <strong>Comprehensive Insurance:</strong> Full coverage designed for sector
+                    type and equipment value
+                  </li>
+                  <li>
+                    <strong>24/7 Service:</strong> Team available around the clock for
+                    emergencies and support
+                  </li>
+                  <li>
+                    <strong>Complete Confidentiality:</strong> We respect your business privacy
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Experience Across Sectors
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Over more than ten years, we've served hundreds of clients from different
+                  sectors in Jeddah and the Kingdom. We've moved 5-star hotels, major
+                  hospitals, multinational companies, international schools, and thousands of
+                  homes and villas. This diverse experience has given us deep understanding of
+                  each sector.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  How We Ensure Your Sector's Moving Success?
+                </h3>
+
+                <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Initial Consultation:</strong> We visit to understand your specific
+                    needs and challenges
+                  </li>
+                  <li>
+                    <strong>Specialized Assessment:</strong> Expert team evaluates equipment
+                    based on sector nature
+                  </li>
+                  <li>
+                    <strong>Custom Plan:</strong> We create detailed plan for your sector and
+                    schedule
+                  </li>
+                  <li>
+                    <strong>Precise Coordination:</strong> Continuous communication at every
+                    stage
+                  </li>
+                  <li>
+                    <strong>Professional Execution:</strong> Specialized team executes plan
+                    precisely
+                  </li>
+                  <li>
+                    <strong>Post-Move Follow-up:</strong> We ensure everything is settled and
+                    you're satisfied
+                  </li>
+                </ol>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Choose your sector from the list above to learn more about our customized
+                  services, or{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    call us
+                  </a>{" "}
+                  now for free consultation and customized quote for your sector. We're here to
+                  serve you with professionalism and expertise.
                 </p>
               </>
             )}

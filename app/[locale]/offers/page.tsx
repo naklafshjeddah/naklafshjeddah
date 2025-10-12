@@ -268,19 +268,123 @@ export default function OffersPage({ params: { locale } }: { params: { locale: s
             ) : (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  Terms and Conditions
+                  Exclusive Offers on Furniture Moving Services in Jeddah
                 </h2>
 
-                <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  At{" "}
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Moving Company
+                  </a>
+                  , we believe in providing the best value to our customers. That's why we offer
+                  exclusive discounts on{" "}
+                  <a href="/en/services" className="text-primary-600 hover:underline">
+                    professional furniture moving services
+                  </a>{" "}
+                  in Jeddah. These offers are designed to save you money without compromising
+                  the quality or professionalism we're known for.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  How to Take Advantage of Offers?
+                </h3>
+
+                <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
+                  <li>
+                    <strong>Contact Us:</strong> Call{" "}
+                    <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                      0560586397
+                    </a>{" "}
+                    or{" "}
+                    <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                      WhatsApp
+                    </a>{" "}
+                    and tell us which offer you want
+                  </li>
+                  <li>
+                    <strong>Mention Discount Code:</strong> When requesting quote to apply
+                    discount directly
+                  </li>
+                  <li>
+                    <strong>Book Your Date:</strong> We confirm applied discount and set
+                    suitable time
+                  </li>
+                  <li>
+                    <strong>Enjoy the Service:</strong> Get professional service at discounted
+                    price with excellent quality
+                  </li>
+                </ol>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Do We Offer These Deals?
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Furniture moving may seem expensive to many. We understand that and want to
+                  make our professional services accessible to everyone. Our offers aren't just
+                  discounts; they're our commitment to serving the community and building
+                  long-term relationships with our customers.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Terms and Conditions
+                </h3>
+
+                <div className="bg-gray-50 p-6 rounded-lg not-prose mb-6">
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
                     <li>Cannot combine more than one offer at the same time</li>
-                    <li>Offers valid only within Jeddah city</li>
-                    <li>Must mention discount code at initial booking</li>
+                    <li>Offers valid only within Jeddah city for local moving</li>
+                    <li>Must mention discount code at initial booking before quote issuance</li>
                     <li>Offers do not include separate storage services</li>
                     <li>Company reserves the right to cancel or modify offers anytime</li>
-                    <li>Some offers may be for limited time</li>
+                    <li>Some offers may be for limited time - call to check validity</li>
+                    <li>Discounts apply to basic services, may not include specific additional services</li>
+                    <li>Offers are non-transferable and cannot be exchanged for cash</li>
                   </ul>
                 </div>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Tips to Save More
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  In addition to our offers, here are tips to save more when{" "}
+                  <a href="/en/services/home-moving-jeddah" className="text-primary-600 hover:underline">
+                    moving your home
+                  </a>
+                  :
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Book Early:</strong> Early booking allows better organization and
+                    may save you money
+                  </li>
+                  <li>
+                    <strong>Organize Your Items:</strong> Get rid of unused furniture to reduce
+                    volume and cost
+                  </li>
+                  <li>
+                    <strong>Choose Mid-Week Days:</strong> Usually less crowded and sometimes
+                    cheaper
+                  </li>
+                  <li>
+                    <strong>Do Some Packing Yourself:</strong> If able, pack small items
+                    yourself
+                  </li>
+                  <li>
+                    <strong>Ask About Packages:</strong> Sometimes comprehensive packages are
+                    more economical
+                  </li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mt-8 text-center font-semibold">
+                  Don't miss our exclusive offers! Call us now at{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline">
+                    0560586397
+                  </a>{" "}
+                  for customized quote with discount. Limited offers!
+                </p>
               </>
             )}
           </div>

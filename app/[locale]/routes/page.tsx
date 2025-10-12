@@ -340,13 +340,194 @@ export default function RoutesPage({ params: { locale } }: { params: { locale: s
             ) : (
               <>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-                  Why Choose Al Afdal for Intercity Moving?
+                  Professional Intercity Furniture Moving Services from Jeddah
                 </h2>
 
-                <p className="text-gray-700 leading-relaxed">
-                  Intercity moving requires special expertise - long routes, changing weather
-                  conditions, and logistical challenges. At Al Afdal, we have extensive experience
-                  moving furniture between all Saudi cities.
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Intercity moving requires special expertise and advanced equipment. At{" "}
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Company
+                  </a>
+                  , we have extensive experience moving furniture from Jeddah to all Saudi
+                  cities. Whether you're moving to Riyadh, Makkah, Madinah, Taif, or any other
+                  city, we guarantee safe, fast, and reliable moving. We use trucks specially
+                  equipped for long distances, professional drivers who know the routes well,
+                  and plan each trip precisely.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Does Intercity Moving Need Special Expertise?
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Local moving within{" "}
+                  <a href="/en/jeddah" className="text-primary-600 hover:underline">
+                    Jeddah
+                  </a>{" "}
+                  is very different from intercity moving. Long routes extending hundreds of
+                  kilometers, changing weather conditions, logistical challenges, and potential
+                  delays - all require precise planning and deep experience. Successful
+                  intercity moving needs:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>Trucks designed for long distances with enhanced suspension systems</li>
+                  <li>Extra packing resistant to long vibrations</li>
+                  <li>Very secure fastening to prevent movement during journey</li>
+                  <li>Drivers expert in highways and different conditions</li>
+                  <li>Regular truck maintenance to avoid breakdowns</li>
+                  <li>Precise timing coordination</li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  What Distinguishes Our Intercity Moving Service?
+                </h3>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Specialized Trucks:</strong> Fleet of large enclosed trucks
+                    specially equipped for long distances
+                  </li>
+                  <li>
+                    <strong>Double Packing:</strong> We use{" "}
+                    <a href="/en/services/packing-unpacking" className="text-primary-600 hover:underline">
+                      extra protection layers
+                    </a>{" "}
+                    for long routes
+                  </li>
+                  <li>
+                    <strong>Comprehensive Insurance:</strong> Full coverage throughout journey
+                    from pickup to delivery
+                  </li>
+                  <li>
+                    <strong>GPS Tracking:</strong> Live tracking of truck throughout the route
+                  </li>
+                  <li>
+                    <strong>Reception Team:</strong> In destination city to complete delivery
+                    and unpacking
+                  </li>
+                  <li>
+                    <strong>Schedule Flexibility:</strong> We set pickup and delivery times
+                    according to your needs
+                  </li>
+                  <li>
+                    <strong>Continuous Communication:</strong> We keep you updated with every
+                    development during journey
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  How Do We Ensure Your Furniture Safety on the Road?
+                </h3>
+
+                <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Inspection and Assessment:</strong> We inspect furniture and
+                    determine appropriate packing method and truck
+                  </li>
+                  <li>
+                    <strong>Professional Double Packing:</strong> With high-quality,
+                    shock-resistant materials
+                  </li>
+                  <li>
+                    <strong>Secure Fastening:</strong> Inside truck with strong straps and
+                    protective barriers
+                  </li>
+                  <li>
+                    <strong>Weight Distribution:</strong> Balanced to ensure truck stability on
+                    road
+                  </li>
+                  <li>
+                    <strong>Expert Drivers:</strong> Trained in safe highway driving
+                  </li>
+                  <li>
+                    <strong>Regular Checks:</strong> We stop regularly to check load and
+                    fastening
+                  </li>
+                  <li>
+                    <strong>Safe Delivery:</strong> Specialized team receives and unloads
+                    carefully at destination
+                  </li>
+                </ol>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Main Destinations from Jeddah
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We provide regular moving services from Jeddah to:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Jeddah - Riyadh:</strong> Most requested route, about 950 km, fast
+                    and safe to capital
+                  </li>
+                  <li>
+                    <strong>Jeddah - Makkah:</strong> Short distance 80 km, daily service
+                    available
+                  </li>
+                  <li>
+                    <strong>Jeddah - Madinah:</strong> 420 km, professional moving to Madinah
+                  </li>
+                  <li>
+                    <strong>Jeddah - Taif:</strong> 170 km, mountain road needs special
+                    expertise
+                  </li>
+                  <li>
+                    <strong>Jeddah - Dammam:</strong> 1340 km, Eastern Region moving with
+                    precise planning
+                  </li>
+                  <li>
+                    <strong>Other Destinations:</strong> Abha, Jazan, Tabuk, Hail, and all Saudi
+                    cities
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Pricing and Cost
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Intercity moving cost depends on several factors:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Distance:</strong> Long distances (Jeddah-Riyadh) cost more than
+                    short ones (Jeddah-Makkah)
+                  </li>
+                  <li>
+                    <strong>Furniture Volume:</strong> Amount determines required truck size
+                  </li>
+                  <li>
+                    <strong>Furniture Type:</strong> Heavy or sensitive pieces may need special
+                    handling
+                  </li>
+                  <li>
+                    <strong>Additional Services:</strong> Packing, assembly/disassembly,
+                    temporary storage
+                  </li>
+                  <li>
+                    <strong>Season:</strong> Some periods (month-end, holidays) may be busier
+                  </li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We provide transparent, detailed quotes without hidden fees. For accurate
+                  quote for your destination, click on the city from list above or{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    call us
+                  </a>{" "}
+                  directly.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed mt-8 text-center font-semibold">
+                  Planning to move to another city? Let us help! Call now at{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline">
+                    0560586397
+                  </a>{" "}
+                  for free consultation and customized quote for your destination.
                 </p>
               </>
             )}

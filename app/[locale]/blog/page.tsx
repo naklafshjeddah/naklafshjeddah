@@ -300,9 +300,140 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
                 </h2>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Welcome to Al Afdal Moving Blog! Here you'll find everything you need from
-                  information, tips, and practical guides to make your moving experience easier
-                  and more successful.
+                  Welcome to{" "}
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Moving Blog
+                  </a>
+                  ! Here you'll find everything you need - information, tips, and practical guides
+                  to make your moving experience easier and more successful. We don't just provide
+                  professional moving services; we share our extensive experience through detailed
+                  articles and valuable content to help you at every step.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Follow Our Blog?
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Moving furniture isn't a simple process. There are many details, challenges,
+                  and decisions to make. By following our blog, you'll get:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Expert Practical Tips:</strong> Articles based on years of experience
+                    in furniture moving in Jeddah and Saudi Arabia
+                  </li>
+                  <li>
+                    <strong>Step-by-Step Comprehensive Guides:</strong> For every aspect of
+                    moving, from planning to settling in
+                  </li>
+                  <li>
+                    <strong>Solutions to Common Problems:</strong> Answers to frequently asked
+                    questions and solutions to challenges most people face
+                  </li>
+                  <li>
+                    <strong>Latest Methods and Techniques:</strong> Information about the latest
+                    packing, moving, and storage methods
+                  </li>
+                  <li>
+                    <strong>Checklists and Planners:</strong> Practical tools to help organize
+                    your move
+                  </li>
+                  <li>
+                    <strong>Money-Saving Tips:</strong> How to get the best service at the best
+                    price
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Main Blog Topics
+                </h3>
+
+                <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                  1. Planning and Preparation
+                </h4>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Successful moving starts with good planning. We provide comprehensive articles
+                  on: how to choose a{" "}
+                  <a href="/en/services" className="text-primary-600 hover:underline">
+                    reliable moving company
+                  </a>
+                  , when to start planning, how to set a realistic timeline, cost estimation,
+                  and common mistakes to avoid.
+                </p>
+
+                <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                  2. Packing and Protection Arts
+                </h4>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Proper packing is the foundation of protecting your belongings. We share{" "}
+                  <a href="/en/services/packing-unpacking" className="text-primary-600 hover:underline">
+                    professional packing
+                  </a>{" "}
+                  secrets: different packing materials and their uses, how to pack dishes and
+                  glass, protecting wooden and upholstered furniture, packing sensitive
+                  electronics, and organizing boxes for easy unpacking.
+                </p>
+
+                <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                  3. Moving Specific Types of Furniture
+                </h4>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Each furniture type needs special handling. We have specialized articles on:
+                  moving pianos and musical instruments, antiques, large appliances, plants and
+                  aquariums, libraries and books, and heavy furniture.
+                </p>
+
+                <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                  4. Intercity and Long Distance Moving
+                </h4>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <a href="/en/routes" className="text-primary-600 hover:underline">
+                    Intercity moving
+                  </a>{" "}
+                  has special challenges. We cover topics like: planning Jeddah-Riyadh moves,
+                  long trip preparations, choosing a long-distance moving company, necessary
+                  precautions, and tracking your shipment.
+                </p>
+
+                <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                  5. Storage and Space Management
+                </h4>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Sometimes you need{" "}
+                  <a href="/en/storage" className="text-primary-600 hover:underline">
+                    temporary furniture storage
+                  </a>
+                  . We provide articles on: when you need storage, choosing suitable storage,
+                  preparing furniture for long-term storage, organizing inventory, and
+                  protecting furniture from moisture and insects.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Quick Tips from the Blog
+                </h3>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>Start planning at least one month before moving date</li>
+                  <li>Get rid of unused items before packing - saves time and money</li>
+                  <li>Photograph valuable furniture for documentation and insurance</li>
+                  <li>Keep an "essentials" box for immediate needs in new home</li>
+                  <li>Inform neighbors and building management about moving date</li>
+                  <li>Update address in all official documents and subscriptions</li>
+                </ul>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Have a specific topic you want us to write about? Or a question you haven't
+                  found an answer to? Contact us at{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    0560586397
+                  </a>{" "}
+                  or{" "}
+                  <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                    WhatsApp
+                  </a>
+                  . We're here to help with everything you need!
                 </p>
               </>
             )}
