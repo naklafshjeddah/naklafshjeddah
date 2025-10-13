@@ -194,21 +194,21 @@ export default function BlogPostPage({
               {/* Call to Action Box */}
               <div className="bg-white border-2 border-primary-600 rounded-xl p-8 my-10 text-center shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {isArabic ? "هل أعجبك المقال؟ شاركه!" : "Enjoyed the Article? Share it!"}
+                  {isArabic ? "هل أعجبك المقال؟ اتصل بنا!" : "Enjoyed the Article? Contact Us!"}
                 </h3>
                 <p className="text-gray-600 mb-6">
                   {isArabic
-                    ? "ساعد أصدقاءك وعائلتك بمشاركة هذه النصائح المفيدة معهم"
-                    : "Help your friends and family by sharing these useful tips"}
+                    ? "هل لديك استفسار حول هذا الموضوع؟ فريقنا مستعد لمساعدتك"
+                    : "Have questions about this topic? Our team is ready to help"}
                 </p>
                 <div className="flex justify-center gap-4">
                   <a 
-                    href={`https://wa.me/?text=${encodeURIComponent(isArabic ? post.titleAr : post.titleEn)} ${encodeURIComponent(window.location.href)}`}
+                    href="https://wa.me/966560586397"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   >
-                    {isArabic ? "مشاركة عبر واتساب" : "Share on WhatsApp"}
+                    {isArabic ? "تواصل معنا عبر واتساب" : "Contact on WhatsApp"}
                   </a>
                 </div>
               </div>
