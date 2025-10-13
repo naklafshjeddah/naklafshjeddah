@@ -1347,9 +1347,157 @@ This comprehensive guide provides a complete checklist for <a href="${linkPrefix
         sections: [
           {
             title: "Introduction: Office Moving is Totally Different",
-            content: `Office moving isn't like home moving. There are additional considerations: business continuity, data security, sensitive equipment, and maintaining productivity. One day of downtime can cost thousands of riyals.
+            content: `Office moving isn't like home moving. There are additional considerations: business continuity, data security, sensitive equipment, and maintaining productivity. One day of downtime can cost company thousands of riyals.
 
-At <a href="${linkPrefix}/services/office-relocation-jeddah" class="text-primary-600 hover:underline">Al Afdal</a>, we specialize in <a href="${linkPrefix}/services/office-relocation-jeddah" class="text-primary-600 hover:underline">office relocation</a> with minimal downtime.`,
+At <a href="${linkPrefix}/services/office-relocation-jeddah" class="text-primary-600 hover:underline">Al Afdal</a>, we specialize in office relocation with minimal downtime. We've moved offices of all sizes, from small startups to large corporations with hundreds of employees.
+
+This guide explains everything you need for successful office move while maintaining workflow.`,
+          },
+          {
+            title: "Advance Planning: 8-12 Weeks Before",
+            content: `**The Earlier You Start, The Better**
+
+**1. Form Moving Team:**
+Create team of 3-5 employees responsible for:
+- Coordination with moving company
+- Logistics planning
+- Packing supervision
+- Employee communication
+
+**2. Set Timeline:**
+- Determine moving date (preferably weekend or holiday)
+- Plan each phase in detail
+- Calculate expected downtime
+- Create emergency backup plan
+
+**3. Choose <a href="${linkPrefix}/services/office-relocation-jeddah" class="text-primary-600 hover:underline">Specialized Moving Company</a>:**
+Not all furniture moving companies suitable for offices. Look for:
+- Office moving experience
+- Comprehensive equipment insurance
+- Technical services (network assembly)
+- After-hours work
+
+**4. Assessment and Budget:**
+**Small Office (5-10 employees):**
+- Cost: 3,000-6,000 SAR
+- Time: 6-10 hours
+- Downtime: 1-2 days
+
+**Medium Office (20-50 employees):**
+- Cost: 8,000-15,000 SAR
+- Time: 1-2 days
+- Downtime: 2-3 days
+
+**Large Office (100+ employees):**
+- Cost: 20,000-50,000 SAR
+- Time: 3-5 days
+- Downtime: 3-7 days`,
+          },
+          {
+            title: "Securing Data and Technical Equipment",
+            content: `**Data = Company's Most Important Asset**
+
+**Two Weeks Before:**
+
+**1. Comprehensive Backup:**
+- Copy all data (servers, individual devices)
+- Test backups
+- Keep off-site copy (cloud)
+
+**2. Servers and Networks:**
+- Photograph all connections
+- Label all cables
+- Create network diagram
+- Keep list of all passwords
+
+**3. Computers:**
+- Back up important data
+- Record number and location of each device
+- Disconnect all cables in labeled bags
+- Wrap each device with bubble wrap
+
+**4. Printers and Scanners:**
+- Remove inks and cartridges
+- Secure moving parts
+- Wrap with protective materials`,
+          },
+          {
+            title: "Downtime Reduction Strategy",
+            content: `**Every Minute Down = Loss**
+
+**Strategy 1: Phased Moving**
+- Move different departments on different days
+- Start with less critical departments
+- Leave vital departments for last
+- **Benefit**: Work continues partially
+
+**Strategy 2: Weekend Moving**
+- Start Thursday evening
+- Work all Friday and Saturday
+- Ready for work Sunday morning
+- **Benefit**: Only two days down
+
+**Strategy 3: Night Moving**
+- Start after work (6 PM)
+- Work all night
+- Finish before work starts (8 AM)
+- **Cost**: +25-35% but no downtime!
+
+**Strategy 4: Pre-setup**
+- Fully prepare new office (electricity, internet, AC)
+- Arrange basic furniture beforehand
+- Test all systems
+- **Benefit**: Immediate transition`,
+          },
+          {
+            title: "Moving Day Checklist",
+            content: `**Morning Preparation:**
+✅ Moving team arrives on time
+✅ Confirm inventory list
+✅ Review loading plan
+✅ Assign supervisor per department
+
+**Loading:**
+✅ Start with closed departments
+✅ Label each box clearly (department + desk number)
+✅ Photograph sensitive equipment before loading
+✅ Keep list of what's loaded
+
+**Transit:**
+✅ Escort vehicle for sensitive equipment
+✅ Track trucks
+✅ Continuous driver communication
+
+**Unloading:**
+✅ Start with vital departments (IT, management)
+✅ Place each box in correct location
+✅ Check equipment upon arrival
+✅ Test technical systems
+
+**Next Day:**
+✅ Comprehensive equipment check
+✅ Solve any technical issues
+✅ Organize desks
+✅ Resume full operations`,
+          },
+          {
+            title: "Summary: Successful Office Move",
+            content: `**Key = Early Planning & Precise Execution**
+
+**Major Mistakes to Avoid:**
+1. Delaying planning
+2. Not making backups
+3. Choosing cheapest instead of best
+4. Not notifying employees early
+5. Ignoring system testing in new office
+
+**Benefits of Using <a href="${linkPrefix}/services/office-relocation-jeddah" class="text-primary-600 hover:underline">Professional Office Movers</a>:**
+- 60-70% downtime reduction
+- Sensitive equipment protection
+- System assembly expertise
+- Comprehensive equipment insurance
+
+At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibold">Al Afdal</a>, we've successfully moved offices of all sizes 100%. <a href="tel:+966560586397" class="text-primary-600 hover:underline font-bold">Call us at 0560586397</a> for free consultation!`,
           },
         ],
       },
@@ -2014,7 +2162,63 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
         sections: [
           {
             title: "Introduction: Art of Furniture Disassembly",
-            content: `Furniture disassembly and assembly is art requiring skill. One mistake could cost expensive furniture. At <a href="${linkPrefix}/services" class="text-primary-600 hover:underline">Al Afdal</a>, our team is trained for 100% accurate assembly.`,
+            content: `Furniture disassembly and assembly is art requiring skill and experience. One mistake could cost you expensive furniture piece. At <a href="${linkPrefix}/services" class="text-primary-600 hover:underline">Al Afdal Company</a>, our team is trained to disassemble and assemble all furniture types with 100% accuracy.`,
+          },
+          {
+            title: "Furniture That Needs Disassembly",
+            content: `**Must be disassembled:**
+- Large beds (king, queen)
+- Large wardrobes
+- Complete bedrooms
+- Large dining tables
+- Office desks
+
+**Usually not disassembled:**
+- Regular sofas
+- Small tables
+- Single beds
+- Chairs`,
+          },
+          {
+            title: "Professional Disassembly Steps",
+            content: `**Before Disassembly:**
+1. **Photograph assembled piece** from all angles
+2. **Photograph assembly method** (connections, screws)
+3. **Prepare suitable tools** (screwdrivers, wrenches)
+4. **Prepare bags** for screws and small parts
+
+**During Disassembly:**
+1. **Start from top parts**
+2. **Label each piece** (number + location)
+3. **Put screws in labeled bags**
+4. **Arrange pieces in reverse order** for assembly
+
+**After Disassembly:**
+1. **Wrap each piece separately**
+2. **Keep screw bag attached to piece**
+3. **Photograph disassembled parts**`,
+          },
+          {
+            title: "Assembly in New Home",
+            content: `**1. Preparation:**
+- Clean the place
+- Check parts
+- Prepare tools
+
+**2. Assembly:**
+- Follow photos you took
+- Start from bottom to top
+- Tighten screws evenly
+
+**3. Final Check:**
+- Ensure piece stability
+- Check all connections
+- Clean the area
+
+**Cost:**
+- Bedroom disassembly and assembly: 400-700 SAR
+- Kitchen: 1,000-2,000 SAR
+- <a href="${linkPrefix}/services/villa-moving-jeddah" class="text-primary-600 hover:underline">Complete villa</a>: 2,000-4,000 SAR`,
           },
         ],
       },
@@ -2090,7 +2294,64 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
         sections: [
           {
             title: "Summer Moving Challenge in Jeddah",
-            content: `Jeddah summer is harsh: 45°C + 70% humidity = real challenge. But sometimes no choice. At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibold">Al Afdal</a>, we have proven strategies for safe summer moving.`,
+            content: `Jeddah summer is harsh: 45°C + 70% humidity = real moving challenge. But sometimes you have no choice. At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibold">Al Afdal Company</a>, we have proven strategies for safe summer moving.`,
+          },
+          {
+            title: "Best Times for Summer Moving",
+            content: `**Best Option: Early Morning**
+- **Time**: 5:00-6:00 AM
+- **Temperature**: 28-32°C (bearable)
+- **Goal**: Finish before 11 AM
+
+**Alternative Option: Late Evening**
+- **Time**: 7:00-8:00 PM
+- **Temperature**: 35-38°C
+- **Challenge**: Lighting (need spotlights)
+
+**Completely Avoid:**
+❌ Period 11 AM - 6 PM
+❌ Heat can reach 48°C!`,
+          },
+          {
+            title: "Protecting Furniture from Heat",
+            content: `**Wooden Furniture:**
+- Expands in extreme heat
+- **Solution**: Thick wrapping + quick transport
+
+**Electronics:**
+- Heat destroys them
+- **Only Solution**: Air-conditioned truck (30-40% extra cost)
+
+**Plastic and Rubber:**
+- Melts in heat
+- **Solution**: Avoid direct sun exposure
+
+**Fabrics:**
+- Affected by humidity and heat
+- **Solution**: Moisture-resistant wrapping`,
+          },
+          {
+            title: "Health Tips for Workers and Family",
+            content: `**For Workers:**
+- Break every 30 minutes
+- Drink plenty of water
+- Light cotton clothing
+- Rotate work
+
+**For Family:**
+- Don't stay home during moving (heat + exhaustion)
+- Go to air-conditioned place
+- Return when work is done
+
+**Precautions:**
+- Cold water + ice available
+- First aid ready
+- Emergency number visible
+
+**Additional Summer Cost:**
+- Air-conditioned truck: +30-40%
+- Extra workers: +20-25%
+- Early start: +15-20%`,
           },
         ],
       },
@@ -2206,7 +2467,40 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
         sections: [
           {
             title: "Moving with Kids: Double Challenge",
-            content: `Moving is stressful for adults, what about with kids? Anxiety, fear of change, losing toys - real challenges. Your guide for smooth moving with children.`,
+            content: `Moving is stressful for adults, imagine with kids? Anxiety, fear of change, losing toys - real challenges. Your guide for smooth moving with children.`,
+          },
+          {
+            title: "Psychological Preparation for Children",
+            content: `**Two Weeks Before:**
+✅ Talk positively about new home
+✅ Show them photos of new home and neighborhood
+✅ Let them choose their room colors
+
+**One Week Before:**
+✅ Let them pack their toys themselves
+✅ Make "favorite toys" box together
+✅ Talk about new friends
+
+**Moving Day:**
+✅ Best: Send them to relatives' house
+✅ If they stay: Assign simple tasks (sticking labels)
+✅ Dedicate someone to watch them`,
+          },
+          {
+            title: "Organizing Children's Items",
+            content: `**Essentials Box:**
+- Clothes for two days
+- Favorite toys (2-3)
+- Storybooks
+- Their favorite blanket
+
+**Golden Tip:**
+Children's rooms set up first in new home!
+
+**After Moving:**
+- Arrange their rooms on first day
+- Let them help arranging
+- Explore new neighborhood together`,
           },
         ],
       },
@@ -2282,7 +2576,64 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
         sections: [
           {
             title: "Furniture Insurance: Necessity or Luxury?",
-            content: `"My furniture worth 200,000 SAR, but insurance only covers 3,000!" - problem many face. Understanding insurance protects from big losses.`,
+            content: `"My furniture worth 200,000 SAR, but insurance only covers 3,000!" - a problem many face. Understanding insurance protects you from big losses.`,
+          },
+          {
+            title: "Types of Insurance",
+            content: `**1. Basic Insurance (Free):**
+- Coverage: 10-20 SAR/kg
+- 3-bedroom apartment (2 tons) = 20,000-40,000 SAR compensation
+- **Problem**: Doesn't cover actual value!
+
+**2. Comprehensive Insurance (Paid):**
+- Cost: 2-5% of furniture value
+- Covers: Full value
+- Includes: Breakage, loss, theft, fire
+
+**3. Valuable Items Insurance (Special):**
+- For antiques and collectibles
+- Official appraisal required
+- Cost: 5-8%
+- Full compensation`,
+          },
+          {
+            title: "How to Calculate Required Insurance",
+            content: `**Step 1: Value Your Furniture**
+- Regular furniture: Current market value (not purchase price)
+- Valuable items: Official appraisal
+
+**Example:**
+- Bedroom (5 years): Bought for 20,000, now worth 10,000
+- Sofa (3 years): Bought for 15,000, now worth 9,000
+- Apartment total: 80,000 SAR
+
+**Step 2: Choose Insurance Type**
+- Basic insurance: Free (max compensation 20,000)
+- Comprehensive (3%): 2,400 SAR (compensation 80,000)
+
+**Smart Decision:**
+If your furniture > 30,000 SAR → Comprehensive insurance necessary!`,
+          },
+          {
+            title: "Claims: How to Get Your Compensation",
+            content: `**When Damage Occurs:**
+1. **Don't move anything** - Photo everything
+2. **Notify company immediately** (within 24 hours)
+3. **Fill claim form**
+4. **Provide evidence**: Before/after photos, receipts
+
+**Required Documents:**
+- Moving contract
+- Damage photos
+- Purchase invoice (if available)
+- Company report
+
+**Timeline:**
+- Claim inspection: 3-7 days
+- Compensation decision: 7-14 days
+- Payment: 14-30 days
+
+**Tip:** Read contract carefully before signing!`,
           },
         ],
       },
