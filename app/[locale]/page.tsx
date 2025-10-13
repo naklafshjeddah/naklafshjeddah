@@ -597,15 +597,342 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   When thinking about moving your home or office, your first concern is the safety
                   of your belongings and peace of mind. At <strong>Al Afdal Company</strong>, we
                   fully understand the value of every furniture piece and importance of safe arrival
-                  to new destination. That's why we provide professional furniture moving services
-                  in Jeddah built on years of experience and genuine commitment to service quality.
+                  to new destination. That's why we provide{" "}
+                  <a href="/en/services" className="text-primary-600 hover:underline">
+                    professional furniture moving services in Jeddah
+                  </a>{" "}
+                  built on years of experience and genuine commitment to service quality.
                 </p>
+
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  We understand that moving isn't just a logistical process, but a transition of
+                  an entire life with all its memories and hopes. That's why we ensure to provide
+                  service that exceeds your expectations at every stage. Whether you're looking for{" "}
+                  <a href="/en/services/home-moving-jeddah" className="text-primary-600 hover:underline">
+                    home and apartment moving
+                  </a>{" "}
+                  or{" "}
+                  <a href="/en/services/villa-moving-jeddah" className="text-primary-600 hover:underline">
+                    luxury villa moving
+                  </a>{" "}
+                  or even{" "}
+                  <a href="/en/services/office-relocation-jeddah" className="text-primary-600 hover:underline">
+                    office and company relocation
+                  </a>
+                  , we're here to serve you with highest professionalism.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Our Comprehensive Services
+                </h3>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
                   We don't just provide moving service, but complete experience from the moment you
                   call us until you're satisfied with last furniture piece in your new home. Our
-                  services include free inspection, professional packing, specialized assembly,
-                  modern equipment, equipped vehicles, and safe storage.
+                  services include:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Free Home Inspection:</strong> Expert team visits you to assess
+                    furniture volume, identify challenges, and provide accurate quote
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="/en/services/packing-unpacking" className="text-primary-600 hover:underline">
+                        Professional Packing
+                      </a>
+                      :
+                    </strong>{" "}
+                    Using high-quality materials (bubble wrap, thick cartons, protective blankets)
+                  </li>
+                  <li>
+                    <strong>Furniture Disassembly and Assembly:</strong> Dismantling large pieces,
+                    safely transporting them, and reassembling them in new location
+                  </li>
+                  <li>
+                    <strong>Modern Equipment:</strong> Electric lifts, moving carts, cranes for
+                    higher floors
+                  </li>
+                  <li>
+                    <strong>Equipped Vehicles:</strong> Various sized trucks with internal
+                    fastening systems
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="/en/storage" className="text-primary-600 hover:underline">
+                        Safe Storage
+                      </a>
+                      :
+                    </strong>{" "}
+                    If you need temporary storage before moving to new home
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Coverage of All Jeddah Districts
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We're proud to serve all Jeddah districts without exception. Whether you're in
+                  upscale neighborhoods like{" "}
+                  <a href="/en/jeddah/al-hamra" className="text-primary-600 hover:underline">
+                    Al Hamra
+                  </a>{" "}
+                  and{" "}
+                  <a href="/en/jeddah/al-rawdah" className="text-primary-600 hover:underline">
+                    Al Rawdah
+                  </a>
+                  , coastal areas like{" "}
+                  <a href="/en/jeddah/ash-shati" className="text-primary-600 hover:underline">
+                    Ash Shati
+                  </a>
+                  , central areas like{" "}
+                  <a href="/en/jeddah/as-salama" className="text-primary-600 hover:underline">
+                    As Salama
+                  </a>
+                  , or northern areas like{" "}
+                  <a href="/en/jeddah/al-naeem" className="text-primary-600 hover:underline">
+                    Al Naeem
+                  </a>
+                  , we're familiar with every street and alley. This local knowledge helps us plan
+                  the best routes, avoid traffic congestion, and reach you on time.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Intercity Moving Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  In addition to moving within Jeddah, we provide specialized intercity moving
+                  services. If you're relocating from Jeddah to another city, we have the
+                  expertise and equipment for the job. We regularly move to:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>
+                      <a href="/en/routes/jeddah-to-riyadh" className="text-primary-600 hover:underline">
+                        Jeddah to Riyadh
+                      </a>
+                      :
+                    </strong>{" "}
+                    Most requested route, approximately 950 km, fast and safe moving to capital
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="/en/routes/jeddah-to-makkah" className="text-primary-600 hover:underline">
+                        Jeddah to Makkah
+                      </a>
+                      :
+                    </strong>{" "}
+                    Short distance 80 km, daily service available
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="/en/routes/jeddah-to-madinah" className="text-primary-600 hover:underline">
+                        Jeddah to Madinah
+                      </a>
+                      :
+                    </strong>{" "}
+                    420 km, professional moving to holy city
+                  </li>
+                  <li>
+                    <strong>
+                      <a href="/en/routes/jeddah-to-taif" className="text-primary-600 hover:underline">
+                        Jeddah to Taif
+                      </a>
+                      :
+                    </strong>{" "}
+                    170 km, mountainous route requiring special expertise
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Transparent and Competitive Pricing
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We know that moving cost is an important factor in your decision. That's why we're
+                  fully transparent about pricing. After free inspection, we provide you with
+                  detailed quote explaining every item: transportation, packing, assembly, equipment.
+                  No hidden fees or unpleasant surprises at end.
+                </p>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Our prices are competitive and fair. We don't compromise on quality to reduce cost,
+                  but we manage our operations efficiently to offer you best value. We also provide
+                  special discounts for:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Off-peak timing:</strong> If you choose moving dates during low-demand
+                    periods
+                  </li>
+                  <li>
+                    <strong>Large volumes:</strong> Villas and large apartments get better prices
+                    per cubic meter
+                  </li>
+                  <li>
+                    <strong>Flexible dates:</strong> If you can move on dates we suggest
+                  </li>
+                  <li>
+                    <strong>Early booking:</strong> Booking weeks in advance gets special discounts
+                  </li>
+                  <li>
+                    <strong>Repeat customers:</strong> Loyalty program for customers who used our
+                    services before
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Trained and Trustworthy Team
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Our real strength lies in our specialized team. Every team member is carefully
+                  selected, trained, and qualified. We don't hire random workers. Our crew undergoes:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Intensive training:</strong> On professional packing, safe handling,
+                    and equipment use
+                  </li>
+                  <li>
+                    <strong>Background verification:</strong> For your peace of mind and property
+                    security
+                  </li>
+                  <li>
+                    <strong>Field experience:</strong> Most of our workers have years of experience
+                    in furniture moving
+                  </li>
+                  <li>
+                    <strong>Continuous supervision:</strong> Each team has experienced supervisor
+                    overseeing operations
+                  </li>
+                  <li>
+                    <strong>Professional appearance:</strong> Uniform, clean, polite behavior
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Latest Equipment and Technology
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We constantly invest in latest equipment to make moving process faster, safer, and
+                  more efficient. Our equipment includes:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>External electric lifts:</strong> For upper floors without elevators or
+                    narrow elevators
+                  </li>
+                  <li>
+                    <strong>Specialized moving carts:</strong> For transporting furniture inside
+                    buildings
+                  </li>
+                  <li>
+                    <strong>Protective blankets and covers:</strong> To protect furniture from
+                    scratches during transport
+                  </li>
+                  <li>
+                    <strong>Fastening straps and ropes:</strong> To secure furniture inside truck
+                  </li>
+                  <li>
+                    <strong>Modern packing materials:</strong> Bubble wrap, cartons of various sizes,
+                    wrapping paper
+                  </li>
+                  <li>
+                    <strong>Specialized tools:</strong> For disassembly and assembly of various
+                    furniture types
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Tips for Successful Moving
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Based on our long experience, we offer you these valuable tips to make your move
+                  easier:
+                </p>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Plan early:</strong> Don't wait until last moment. Book moving service
+                    at least two weeks in advance.
+                  </li>
+                  <li>
+                    <strong>Sort and declutter:</strong> Get rid of unnecessary items before moving.
+                    This reduces volume and cost.
+                  </li>
+                  <li>
+                    <strong>Label boxes:</strong> Write room name and general contents on each box
+                    for easy unpacking.
+                  </li>
+                  <li>
+                    <strong>Prepare new home:</strong> Ensure new home is clean and ready before
+                    furniture arrives.
+                  </li>
+                  <li>
+                    <strong>Keep valuables with you:</strong> Important documents, jewelry, and
+                    expensive electronics better carried personally.
+                  </li>
+                  <li>
+                    <strong>Communicate clearly:</strong> Tell moving company about any special
+                    needs or challenges.
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Comprehensive Guarantee and Insurance
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We provide comprehensive guarantee on all our services for your complete peace of
+                  mind. All our operations are covered by comprehensive insurance protecting your
+                  belongings from any potential damage (which is very rare thanks to our
+                  professionalism). In rare cases where damage occurs, we take full responsibility
+                  and compensate you immediately according to damage value. We also provide
+                  guarantee on assembly and installation work for specified period, and return to
+                  fix any issue at no additional cost.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Customer Service and Follow-up
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Our relationship with clients doesn't end with completing the move. We have
+                  specialized customer service department available 24/7 to answer your inquiries,
+                  solve any problems, and provide necessary support. We follow up with you after
+                  moving to ensure your complete satisfaction and everything settled in place. We
+                  listen to your feedback and continuously work to improve our services based on our
+                  customers' experiences. Your satisfaction is our true measure of success, and we
+                  always strive to achieve and exceed your expectations.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 mt-8">
+                  Book Your Service Now
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Don't hesitate to contact us today for free consultation and accurate quote. We're
+                  available 24/7 to serve you. Call now at{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    0560586397
+                  </a>{" "}
+                  or contact us via{" "}
+                  <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                    WhatsApp
+                  </a>
+                  . Let Al Afdal Company make your move a smooth and comfortable unforgettable
+                  experience. We're here to serve you with all professionalism and dedication, and
+                  look forward to being part of your journey to better new life.
                 </p>
               </>
             )}

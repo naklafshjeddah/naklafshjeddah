@@ -528,13 +528,321 @@ export default function StoragePage({ params: { locale } }: { params: { locale: 
               ) : (
                 <>
                   <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
-                    When Do You Need Storage Service?
+                    Safe Furniture Storage Services in Jeddah - Optimal Solution for Protecting Your Belongings
                   </h2>
 
-                  <p className="text-gray-700 leading-relaxed">
-                    Storage service is useful in many situations: time gap during moving, home
-                    renovations, long travel, downsizing, inheritance matters, or business storage
-                    needs. Our warehouses are ready to serve you anytime.
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    In many cases, you may need safe and temporary place to store your furniture and
+                    belongings. Whether you're in transition period between two homes, planning
+                    comprehensive home renovation, traveling for long period, need to downsize your
+                    furniture, or even facing special circumstances like separation or inheritance -
+                    in all these cases, you need place that keeps your furniture safely and with high
+                    quality. Here comes{" "}
+                    <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                      Al Afdal Company
+                    </a>{" "}
+                    with professional storage services and modern warehouses equipped with highest
+                    security and protection standards.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Why is Storage Service Necessary?
+                  </h3>
+
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Many people and families face situations requiring temporary furniture storage.
+                    Most common cases:
+                  </p>
+
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                    <li>
+                      <strong>Time Gap in Moving:</strong> When you leave old home before new home
+                      is ready (due to delivery delay, finishing, furnishing). This period may
+                      extend from days to months, during which you need safe place for furniture.
+                    </li>
+                    <li>
+                      <strong>Renovations and Comprehensive Maintenance:</strong> If you're planning
+                      complete painting, full renovation, floor change, or major maintenance, you
+                      must empty home of furniture to protect it from dust, paint, and damage.
+                      Temporary storage here is necessary.
+                    </li>
+                    <li>
+                      <strong>Long Travel:</strong> If traveling for months (work, study, treatment,
+                      tourism), you may prefer to vacate home and store furniture to save rent or
+                      protect it from leaving home empty for long time.
+                    </li>
+                    <li>
+                      <strong>Downsizing Home:</strong> When moving from large villa to smaller
+                      apartment, or from spacious house to studio, you'll have excess furniture that
+                      doesn't fit in new place. Instead of selling or disposing it, you can store it
+                      until returning to larger home.
+                    </li>
+                    <li>
+                      <strong>Special Circumstances:</strong> Such as separation or divorce cases
+                      where one party needs to store furniture temporarily, or inheritance cases
+                      where furniture is distributed among heirs and needs temporary storage.
+                    </li>
+                    <li>
+                      <strong>Business and Company Needs:</strong> Storing excess office furniture,
+                      archives and files, seasonal inventory, or currently unused equipment.
+                    </li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Features of Our Modern Warehouses
+                  </h3>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    1. Advanced 24/7 Security
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Security is our top priority. Our warehouses are equipped with latest available
+                    security systems: high-definition (HD) surveillance cameras covering every corner
+                    operating 24/7 with continuous recording, trained security team always present,
+                    advanced alarm systems against theft and intrusion directly connected to police,
+                    sensitive fire detection systems and automatic and manual fire extinguishers,
+                    strong perimeter lighting covering building and parking, smart electronic doors
+                    with limited permissions and entry log, and security fences and gates. All this
+                    to ensure absolute protection of your belongings.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    2. Complete Climate Control
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Furniture, especially wooden, leather and textiles, is very sensitive to
+                    temperature and humidity. High heat may cause wood drying and cracking, while
+                    high humidity causes swelling and mold growth. Our warehouses are equipped with
+                    modern air conditioning systems maintaining moderate temperature (20-25°C) and
+                    ideal humidity (40-60%). This protects wooden furniture from expansion or
+                    contraction, prevents mold and fungus growth, preserves fabrics and leather from
+                    damage, and prevents metal parts rust. Stable and ideal environment throughout
+                    storage period.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    3. Cleanliness and Regular Pest Control
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Cleanliness is essential for protecting your furniture. We have regular
+                    maintenance and cleaning program including: comprehensive warehouse cleaning
+                    weekly, preventive program for pest and rodent control monthly by specialized
+                    licensed companies, periodic warehouse inspection to ensure no leaks, moisture
+                    or problems, and good ventilation to prevent bad odors. Our warehouses are
+                    completely clean and free of any insects or rodents.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    4. Private and Locked Storage Units
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Each client gets their own storage unit, locked with double lock, has unique
+                    number and private key. You're the only one with access to your unit. No one
+                    enters your unit - even our staff - except with your permission and presence.
+                    Complete privacy and absolute security. Units in different sizes (small, medium,
+                    large, extra large) to suit your needs whether storing one room contents or
+                    entire villa.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    5. Comprehensive Insurance
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    All warehouse contents covered by comprehensive insurance against all risks:
+                    fire, theft, damage, floods, and others. In very rare case of any damage or
+                    loss, insurance compensates you fully according to furniture value. Your peace
+                    of mind and belongings security are our priority.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    6. Flexibility in Access and Duration
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    We provide complete flexibility. You can visit your unit anytime during working
+                    hours (8 AM - 8 PM) to check on furniture, add new pieces, or take out what you
+                    need. Regarding duration, you decide: storage for one day, week, month, year, or
+                    even several years. No long-term commitment, you can end storage anytime.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Types of Storage Services
+                  </h3>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    Short-Term Storage
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Ideal for temporary needs: gap between two homes (days or weeks), home
+                    renovations, or short travel. We provide complete flexibility without long
+                    commitments. You can receive anytime you wish.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    Long-Term Storage
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Suitable for long travel, downsizing home, or seasonal furniture you don't
+                    currently need. We provide special discounts for storage periods of 6+ months.
+                    Contracts are flexible and can be renewed or terminated easily.
+                  </p>
+
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+                    Business Storage
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Special storage solutions for companies: storing excess office furniture,
+                    archives and files, equipment, seasonal inventory, or furniture between expansion
+                    projects. Special prices and contracts for companies and institutions.
+                  </p>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Additional Integrated Services
+                  </h3>
+
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    We don't just provide space, but complete integrated service:
+                  </p>
+
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                    <li>
+                      <strong>
+                        <a href="/en/services/packing-unpacking" className="text-primary-600 hover:underline">
+                          Professional Packing
+                        </a>
+                        :
+                      </strong>{" "}
+                      We provide packing service customized for long-term storage with high-quality
+                      materials protecting furniture from dust and scratches.
+                    </li>
+                    <li>
+                      <strong>
+                        <a href="/en/services" className="text-primary-600 hover:underline">
+                          Transport to and from Warehouse
+                        </a>
+                        :
+                      </strong>{" "}
+                      We receive your furniture from home, transport it safely to warehouse, and
+                      when needed return it to new home or any location you specify.
+                    </li>
+                    <li>
+                      <strong>Disassembly and Assembly:</strong> If storing large furniture, we
+                      disassemble it to save space and assemble it upon receipt.
+                    </li>
+                    <li>
+                      <strong>Shelves and Pallets:</strong> We provide wooden shelves and pallets
+                      for safely storing furniture off ground.
+                    </li>
+                    <li>
+                      <strong>Inventory Management:</strong> Electronic system to record each piece
+                      you store with reference numbers for easy identification and access.
+                    </li>
+                    <li>
+                      <strong>Additional Insurance:</strong> In addition to basic insurance, you can
+                      add extra insurance for very valuable pieces.
+                    </li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    How Does Storage Service Work?
+                  </h3>
+
+                  <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
+                    <li>
+                      <strong>Contact and Consultation:</strong> Call us at{" "}
+                      <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                        0560586397
+                      </a>{" "}
+                      or via{" "}
+                      <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                        WhatsApp
+                      </a>
+                    </li>
+                    <li>
+                      <strong>Free Inspection:</strong> We visit you to assess volume and determine
+                      suitable unit size
+                    </li>
+                    <li>
+                      <strong>Customized Quote:</strong> We provide accurate quote including
+                      storage and additional services
+                    </li>
+                    <li>
+                      <strong>Packing (if needed):</strong> Team packs your furniture
+                      professionally
+                    </li>
+                    <li>
+                      <strong>Safe Transport:</strong> Moving furniture to warehouse with full care
+                    </li>
+                    <li>
+                      <strong>Organized Storage:</strong> Placing furniture in your private unit
+                      with inventory documentation
+                    </li>
+                    <li>
+                      <strong>Flexible Access:</strong> You can visit unit anytime during working
+                      hours
+                    </li>
+                    <li>
+                      <strong>Return Delivery:</strong> When needed, we deliver furniture to new
+                      location and assemble it
+                    </li>
+                  </ol>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Storage Tips
+                  </h3>
+
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                    <li>
+                      <strong>Clean before storing:</strong> Clean furniture well before storage to
+                      prevent odors and stains
+                    </li>
+                    <li>
+                      <strong>Good packing:</strong> Ensure everything is well-packed especially
+                      glass and breakables
+                    </li>
+                    <li>
+                      <strong>Clear labeling:</strong> Label each box with contents for easy
+                      retrieval later
+                    </li>
+                    <li>
+                      <strong>Disassemble when possible:</strong> Disassemble large furniture to
+                      save space and facilitate storage
+                    </li>
+                    <li>
+                      <strong>Document valuable items:</strong> Photograph valuable pieces before
+                      storage for documentation
+                    </li>
+                  </ul>
+
+                  <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                    Pricing and Cost
+                  </h3>
+
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Storage cost depends on two main factors: unit size (determined by furniture
+                    volume) and storage duration. We offer flexible and competitive pricing:
+                  </p>
+
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                    <li>Daily storage: Suitable for very short periods (days or week)</li>
+                    <li>Weekly storage: Ideal for home renovations or brief transitions</li>
+                    <li>Monthly storage: Most popular option for medium periods</li>
+                    <li>
+                      Annual storage: With special discounts for long periods (6+ months)
+                    </li>
+                  </ul>
+
+                  <p className="text-gray-700 leading-relaxed mt-8">
+                    Don't hesitate to contact us today for free consultation and accurate quote.
+                    Call{" "}
+                    <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                      0560586397
+                    </a>{" "}
+                    or message us on{" "}
+                    <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                      WhatsApp
+                    </a>
+                    . Let Al Afdal provide you with safe and professional storage solution that
+                    gives you complete peace of mind.
                   </p>
                 </>
               )}

@@ -325,10 +325,209 @@ export default function JeddahAreasPage({ params: { locale } }: { params: { loca
                 </h2>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Al Afdal Company takes pride in its comprehensive coverage of all Jeddah districts.
-                  Whether you're in upscale neighborhoods like Al Hamra and Al Rawdah, historical
-                  areas like Al Balad, or coastal areas like Ash Shati and Obhur, we reach you with
-                  same professional service level and fair prices.
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Company
+                  </a>{" "}
+                  takes pride in its comprehensive coverage of all Jeddah districts. We're not
+                  limited to specific areas; we serve all neighborhoods with same professional
+                  quality and efficiency. Our deep knowledge of the city, its streets, and
+                  challenges of each area makes us your ideal choice regardless of where you live.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Services in Upscale Jeddah Neighborhoods
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Luxury neighborhoods like{" "}
+                  <a href="/en/jeddah/al-hamra" className="text-primary-600 hover:underline">
+                    Al Hamra
+                  </a>
+                  ,{" "}
+                  <a href="/en/jeddah/al-rawdah" className="text-primary-600 hover:underline">
+                    Al Rawdah
+                  </a>
+                  , Al Zahra, and Al Basateen are characterized by luxury villas and high-value
+                  furniture. We understand needs of these areas and provide specialized service
+                  that meets this level. We use finest packing materials to protect luxury
+                  furniture, handle antiques and valuable pieces with extreme care, and ensure
+                  maintaining privacy and cleanliness during work. Our teams are highly trained
+                  to deal with luxury homes and uphold highest professionalism standards.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Moving in Central Jeddah Districts
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Central areas like{" "}
+                  <a href="/en/jeddah/as-salama" className="text-primary-600 hover:underline">
+                    As Salama
+                  </a>
+                  , Al Ruwais, Al Baghdadiyah Al Sharqiyah, and Al Faisaliyah are among busiest
+                  Jeddah areas. We know traffic challenge, narrow streets, and crowded residential
+                  buildings there. That's why we precisely plan work timing to avoid rush hours,
+                  use equipment suitable for narrow spaces, and coordinate with buildings for
+                  reserved elevators. We also provide express moving service in these areas for
+                  those with limited time.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Coastal Area Moving Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Coastal neighborhoods like{" "}
+                  <a href="/en/jeddah/ash-shati" className="text-primary-600 hover:underline">
+                    Ash Shati
+                  </a>
+                  , Obhur, Al Hamra Corniche, and Al Nawras are among Jeddah's most beautiful
+                  areas. High humidity there requires special care for furniture. We use
+                  moisture-resistant packing materials, apply protective layers on wooden and
+                  leather furniture, and ensure safe transport away from salt and humidity. We
+                  also understand logistics challenges of moving to coastal towers and high-rise
+                  buildings.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Historical Jeddah Areas
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Historical areas like Al Balad, Al Mazloum, Al Ammariyah, and Al Kandarah have
+                  special character: old buildings with narrow entrances, historical houses with
+                  traditional architecture, and streets that may not accommodate large trucks. We
+                  have extensive experience in these areas. We use smaller trucks when needed, work
+                  manually in places equipment can't reach, and carefully handle old houses to
+                  preserve them.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Northern and Eastern Jeddah Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Growing areas like{" "}
+                  <a href="/en/jeddah/al-naeem" className="text-primary-600 hover:underline">
+                    Al Naeem
+                  </a>
+                  , Dhahban, Al Taiebat, and Briman are expanding rapidly. Modern residential
+                  complexes, new towers, and upscale villas there require modern moving service
+                  matching these developments. We serve these areas regularly, know new
+                  neighborhoods well, and reach you quickly despite distance.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Our Local Service is Better?
+                </h3>
+
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                  <li>
+                    <strong>Deep local knowledge:</strong> We know every Jeddah district,
+                    streets, traffic, and challenges
+                  </li>
+                  <li>
+                    <strong>Quick response:</strong> We reach any area in Jeddah in shortest
+                    possible time
+                  </li>
+                  <li>
+                    <strong>Understanding local needs:</strong> Each area has its character, and
+                    we provide suitable service
+                  </li>
+                  <li>
+                    <strong>Strong local relationships:</strong> We work with many buildings and
+                    compounds
+                  </li>
+                  <li>
+                    <strong>Adapted equipment:</strong> We have suitable equipment for all areas,
+                    from narrow to open
+                  </li>
+                </ul>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Inter-District Moving within Jeddah
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  If you're moving from one Jeddah district to another, we make the process very
+                  easy. Whether from north to south, east to west, or vice versa, we handle
+                  everything. We know best routes between different areas, avoid congestion, and
+                  deliver your furniture to new home quickly and safely. We also coordinate timing
+                  to suit both old and new locations.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Handling Different Building Types
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We have extensive experience with all building types: spacious villas with
+                  gardens, apartments in buildings at various floors, duplex and triplex,
+                  luxury penthouses, high-rise towers, gated communities, and old buildings. We
+                  know how to deal with small elevators, narrow stairs, long corridors, and
+                  complex entrances.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Additional Services for Jeddah Residents
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  In addition to moving within Jeddah, we provide{" "}
+                  <a href="/en/services" className="text-primary-600 hover:underline">
+                    various services
+                  </a>
+                  : intercity moving to and from Jeddah,{" "}
+                  <a href="/en/storage" className="text-primary-600 hover:underline">
+                    safe storage
+                  </a>{" "}
+                  for Jeddah residents needing temporary space for furniture, professional
+                  packing, furniture disassembly and assembly, and office and company moving. All
+                  these services available to all Jeddah residents in all districts.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Customer Testimonials from Different Districts
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We're proud of thousands of families' trust from all Jeddah districts. Our
+                  customers from Al Hamra testify to our professionalism with luxury furniture,
+                  our customers from Al Balad appreciate our care for historical buildings, and
+                  our customers from Obhur value our punctuality despite distance. Their positive
+                  reviews on various platforms are best proof of our service quality.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  How to Book Moving Service in Your District?
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Booking is easy and fast! Choose your district from list above for detailed
+                  information about our services in your area, or call us directly at{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    0560586397
+                  </a>{" "}
+                  and tell us your location. We'll send inspection team for free assessment, give
+                  you accurate quote, and set best time for moving. You can also contact via{" "}
+                  <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                    WhatsApp
+                  </a>{" "}
+                  for easy communication and instant response. We're here to serve all Jeddah
+                  residents professionally and dedication.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Commitment to Jeddah City
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Jeddah is not just our workplace, but our city we love and cherish. We're part
+                  of this wonderful community, know its people, respect its customs, and proud to
+                  serve its residents. Our commitment is providing best furniture moving service
+                  in Jeddah, contributing to residents' comfort, and helping families move
+                  smoothly and safely. Every successful move is source of pride for us, and every
+                  satisfied customer adds to our good reputation in this beautiful city.
                 </p>
               </>
             )}

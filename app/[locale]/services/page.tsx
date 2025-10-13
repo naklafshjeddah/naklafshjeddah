@@ -336,29 +336,225 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
                 </h2>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  At <strong>Al Afdal</strong>, we pride ourselves on providing comprehensive and
-                  excellent furniture moving services that meet all your needs. With years of
-                  experience in furniture moving in Jeddah, we've become the preferred choice for
-                  thousands of satisfied customers.
+                  At{" "}
+                  <a href="/en" className="text-primary-600 hover:underline font-semibold">
+                    Al Afdal Company
+                  </a>
+                  , we pride ourselves on providing comprehensive and excellent furniture moving
+                  services that meet all your needs. We offer integrated solutions for all types
+                  of moving: homes, apartments, villas, offices, and companies. Whatever your needs,
+                  we have the experience, equipment, and specialized team to serve you professionally
+                  and efficiently.
                 </p>
 
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Unique Features</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Home and Apartment Moving Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <a href="/en/services/home-moving-jeddah" className="text-primary-600 hover:underline font-semibold">
+                    Home and apartment moving
+                  </a>{" "}
+                  requires care and professionalism. We understand how precious your belongings are
+                  and handle them with extreme care as if they were our own. We start by visiting
+                  your home for accurate inspection and volume assessment, then develop solid moving
+                  plan including: professional packing of all contents, furniture disassembly and
+                  assembly, safe transport with equipped trucks, and rearranging everything in your
+                  new home. We serve all types of housing from small apartments to spacious houses.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Luxury Villa Moving Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <a href="/en/services/villa-moving-jeddah" className="text-primary-600 hover:underline font-semibold">
+                    Villa moving
+                  </a>{" "}
+                  requires special expertise and significant capabilities. Villas usually contain
+                  large quantities of luxury furniture, valuable pieces, and sensitive appliances.
+                  We have specialized teams trained to handle luxury villas professionally. We
+                  provide advanced lifting equipment for large and heavy pieces, premium packing
+                  materials to protect valuable furniture, and large trucks to transport large
+                  quantities in one trip. We care about every detail from crystal chandeliers to
+                  antique furniture, from artwork to precious artifacts. We also provide villa
+                  garden and outdoor decoration moving services.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Office and Company Relocation Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <a href="/en/services/office-relocation-jeddah" className="text-primary-600 hover:underline font-semibold">
+                    Office and company relocation
+                  </a>{" "}
+                  is completely different from home moving. Time here is crucial factor to minimize
+                  work disruption. We provide professional office moving service including: solid
+                  advance planning, scheduling work on weekends or after hours, labeling and
+                  numbering all pieces for easy rearrangement, safe transport of computers, servers,
+                  and sensitive electronic equipment, disassembly and assembly of desks, cabinets,
+                  and partitions, and reinstallation of electrical and communication networks in
+                  coordination with specialized technicians. We guarantee quick resumption of work
+                  without losses.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Packing and Unpacking Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  <a href="/en/services/packing-unpacking" className="text-primary-600 hover:underline font-semibold">
+                    Professional packing
+                  </a>{" "}
+                  is the cornerstone of any successful move. We use finest available packing
+                  materials: reinforced cardboard boxes in multiple sizes pressure-resistant,
+                  triple-layer bubble wrap to protect glass and mirrors, fabric covers for
+                  upholstered furniture, foam rolls for delicate pieces, plastic bags for clothes
+                  and linens, and strong packing tape. Our team is trained to pack each type of
+                  furniture correctly: dishes and glassware are wrapped individually, electronics
+                  in special boxes, paintings and mirrors in flat cases, and wooden furniture in
+                  protective covers. We also provide unpacking and item arrangement service in new
+                  location.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Furniture Disassembly and Assembly Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We have specialized technicians in disassembly and assembly of all furniture
+                  types. We handle: complex Italian and European bedrooms, modern kitchens of all
+                  types, built-in wardrobes and closets, company desks and work partitions,
+                  extendable dining tables, beds of all types, libraries and shelves, and more. We
+                  use professional tools and keep all pieces and screws organized in numbered bags
+                  with photo documentation when needed. We also provide air conditioner, curtain
+                  and frame, and home appliance disassembly and assembly services.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Safe Storage Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Sometimes you need to store your furniture temporarily between your old and new
+                  home, or for long period during travel or temporary residence. We provide{" "}
+                  <a href="/en/storage" className="text-primary-600 hover:underline">
+                    professional storage services
+                  </a>{" "}
+                  in modern and fully secured warehouses: 24/7 camera surveillance, permanent security
+                  guards, complete temperature and humidity control to protect wooden and leather
+                  furniture, regular pest control, comprehensive fire and theft insurance, and
+                  electronic inventory management system allowing you to know and access your items
+                  easily. We provide flexible options for short-term (days or weeks) and long-term
+                  (months or years) storage at competitive prices.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Other Specialized Moving Services
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  In addition to basic services, we provide specialized services: heavy furniture and
+                  piano moving, medical equipment and sensitive device moving, rare antique and
+                  artifact moving, commercial and restaurant moving, old home cleaning after moving,
+                  and responsible old furniture disposal services.
+                </p>
+
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Why Choose Al Afdal for Your Moving?
+                </h3>
 
                 <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-                  <li>Professional and highly trained work team</li>
-                  <li>Modern and fully equipped trucks and equipment</li>
-                  <li>Professional packing with high-quality materials</li>
-                  <li>Comprehensive insurance on all properties</li>
-                  <li>Competitive and transparent prices with no hidden fees</li>
-                  <li>Excellent 24/7 customer service</li>
-                  <li>Quick execution while maintaining quality</li>
-                  <li>Warranty on all services</li>
+                  <li>
+                    <strong>Long Experience:</strong> Over 10 years serving Jeddah residents
+                  </li>
+                  <li>
+                    <strong>Qualified Team:</strong> All workers trained and background verified
+                  </li>
+                  <li>
+                    <strong>Modern Equipment:</strong> Latest technology lifts, trucks, and tools
+                  </li>
+                  <li>
+                    <strong>High-Quality Materials:</strong> We use best available packing materials
+                  </li>
+                  <li>
+                    <strong>Comprehensive Insurance:</strong> Full coverage on all your belongings
+                  </li>
+                  <li>
+                    <strong>Competitive Pricing:</strong> Fair prices with no hidden fees
+                  </li>
+                  <li>
+                    <strong>Speed and Efficiency:</strong> We complete your move on time without delays
+                  </li>
+                  <li>
+                    <strong>Excellent Customer Service:</strong> Available 24/7 for your service
+                  </li>
+                  <li>
+                    <strong>Extensive Coverage:</strong> We serve all{" "}
+                    <a href="/en/jeddah" className="text-primary-600 hover:underline">
+                      Jeddah districts
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Service Guarantee:</strong> We guarantee your satisfaction or refund
+                  </li>
                 </ul>
 
-                <p className="text-gray-700 leading-relaxed">
-                  We believe that moving furniture is not just moving items from one place to
-                  another, but moving an entire life with all its memories and dreams. Therefore, we
-                  handle each piece of furniture with utmost care as if it were our own.
+                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  Our Work Process
+                </h3>
+
+                <ol className="list-decimal list-inside space-y-3 text-gray-700 mb-6">
+                  <li>
+                    <strong>Contact and Consultation:</strong> Call{" "}
+                    <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                      0560586397
+                    </a>{" "}
+                    for free consultation
+                  </li>
+                  <li>
+                    <strong>Free Home Inspection:</strong> Team visits for volume assessment and
+                    challenge identification
+                  </li>
+                  <li>
+                    <strong>Detailed Quote:</strong> We provide accurate quote explaining all items
+                  </li>
+                  <li>
+                    <strong>Schedule Setting:</strong> Choose suitable time for move
+                  </li>
+                  <li>
+                    <strong>Professional Packing:</strong> Team packs all belongings carefully
+                  </li>
+                  <li>
+                    <strong>Safe Loading:</strong> Using proper equipment for loading
+                  </li>
+                  <li>
+                    <strong>Secure Transport:</strong> Moving to new home with full caution
+                  </li>
+                  <li>
+                    <strong>Organized Unloading:</strong> Placing furniture in designated locations
+                  </li>
+                  <li>
+                    <strong>Assembly and Arrangement:</strong> Furniture assembly and item arrangement
+                  </li>
+                  <li>
+                    <strong>Quality Inspection:</strong> Ensuring everything in place and your
+                    satisfaction
+                  </li>
+                </ol>
+
+                <p className="text-gray-700 leading-relaxed mt-8">
+                  Don't hesitate to contact us today! Call{" "}
+                  <a href="tel:+966560586397" className="text-primary-600 hover:underline font-bold">
+                    0560586397
+                  </a>{" "}
+                  or message us on{" "}
+                  <a href="https://wa.me/966560586397" className="text-primary-600 hover:underline font-bold">
+                    WhatsApp
+                  </a>{" "}
+                  for free consultation and accurate quote. Make your move smooth and comfortable
+                  experience with Al Afdal - your trusted furniture moving partner in Jeddah.
                 </p>
               </>
             )}
