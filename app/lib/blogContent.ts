@@ -1179,7 +1179,7 @@ This comprehensive guide provides a complete checklist for <a href="${linkPrefix
     },
 
     // ========== 6. دليل نقل المكاتب ==========
-    "office-moving-guide": {
+    "office-relocation-guide": {
       ar: {
         sections: [
           {
@@ -1945,7 +1945,7 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
       },
     },
 
-    "furniture-disassembly-guide": {
+    "furniture-assembly-disassembly": {
       ar: {
         sections: [
           {
@@ -2020,7 +2020,7 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
       },
     },
 
-    "summer-moving-tips": {
+    "summer-moving-jeddah": {
       ar: {
         sections: [
           {
@@ -2160,7 +2160,7 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
       },
     },
 
-    "moving-with-kids": {
+    "moving-with-children": {
       ar: {
         sections: [
           {
@@ -2212,7 +2212,7 @@ At <a href="${linkPrefix}/" class="text-primary-600 hover:underline font-semibol
       },
     },
 
-    "furniture-insurance": {
+    "moving-insurance-guide": {
       ar: {
         sections: [
           {
